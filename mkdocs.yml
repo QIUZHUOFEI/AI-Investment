@@ -1,0 +1,42 @@
+# AI Investment 分析报告
+
+site_name: AI Investment
+site_description: AI 产业链投资分析报告
+site_author: AI Agent
+repo_url: https://github.com/your-repo/ai-investment
+repo_name: AI Investment
+
+theme:
+  name: material
+  language: zh
+  palette:
+    primary: indigo
+    accent: blue
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - navigation.top
+    - search.suggest
+    - content.code.copy
+
+markdown_extensions:
+  - pymdownx.superfences
+  - pymdownx.tabbed
+  - pymdownx.emoji
+  - pymdownx.highlight
+  - pymdownx.inlinehilite
+  - pymdownx.tasklist
+  - admonition
+  - footnotes
+  - tables
+  - toc:
+      permalink: true
+
+nav:
+  - 🏠 首页: index.md
+  - 📡 光通信:
+    - 领域总览: 光通信/index.md
+    - Lumentum (LITE): 光通信/lumentum.md
+    - Coherent (COHR): 光通信/coherent.md
+    - 中际旭创 (300308): 光通信/中际旭创.md
+    - Broadcom (AVGO): 光通信/broadcom.md
