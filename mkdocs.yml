@@ -1,10 +1,9 @@
-# AI Investment 分析报告
-
-site_name: AI Investment
-site_description: AI 产业链投资分析报告
+site_name: AI 产业链投资分析
+site_description: AI 产业链投资分析报告 — 从芯片到应用，全景透视
 site_author: AI Agent
-repo_url: https://github.com/your-repo/ai-investment
-repo_name: AI Investment
+site_url: https://QIUZHUOFEI.github.io/AI-Investment/
+repo_url: https://github.com/QIUZHUOFEI/AI-Investment
+repo_name: AI-Investment
 
 theme:
   name: material
@@ -16,11 +15,16 @@ theme:
     - navigation.tabs
     - navigation.sections
     - navigation.top
+    - navigation.indexes
     - search.suggest
     - content.code.copy
 
 markdown_extensions:
-  - pymdownx.superfences
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
   - pymdownx.tabbed
   - pymdownx.emoji
   - pymdownx.highlight
@@ -29,8 +33,13 @@ markdown_extensions:
   - admonition
   - footnotes
   - tables
+  - attr_list
+  - md_in_html
   - toc:
       permalink: true
+
+extra_javascript:
+  - https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.min.js
 
 nav:
   - 🏠 首页: index.md
@@ -40,3 +49,17 @@ nav:
     - Coherent (COHR): 光通信/coherent.md
     - 中际旭创 (300308): 光通信/中际旭创.md
     - Broadcom (AVGO): 光通信/broadcom.md
+  - 🔵 算力芯片:
+    - 领域总览: 算力芯片/index.md
+  - 💾 存储芯片:
+    - 领域总览: 存储芯片/index.md
+  - 🌡️ 液冷/散热:
+    - 领域总览: 液冷/index.md
+  - 🖥️ 服务器/整机:
+    - 领域总览: 服务器/index.md
+  - 🏭 算力基础设施:
+    - 领域总览: 算力基础设施/index.md
+  - 🔬 封装/PCB:
+    - 领域总览: 封装PCB/index.md
+  - 📊 全产业链对比:
+    - 领域总览: 对比/index.md
