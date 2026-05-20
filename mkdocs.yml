@@ -59,7 +59,11 @@ nav:
     - 领域总览: 服务器/index.md
   - 🏭 算力基础设施:
     - 领域总览: 算力基础设施/index.md
-  - 🔬 封装/PCB:
-    - 领域总览: 封装PCB/index.md
+    - 🏠 数据中心（IDC）: 算力基础设施/idc.md
+    - ☁️ 算力租赁（Neocloud）: 算力基础设施/neocloud.md
+  - 🔬 先进封装:
+    - 领域总览: 先进封装/index.md
+  - 🔌 PCB与连接器:
+    - 领域总览: PCB/index.md
   - 📊 全产业链对比:
     - 领域总览: 对比/index.md
