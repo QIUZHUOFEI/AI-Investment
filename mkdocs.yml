@@ -43,6 +43,8 @@ extra_javascript:
 
 nav:
   - 🏠 首页: index.md
+  - 🛠️ 半导体设备:
+    - 💡 光刻机入门: 半导体设备/index.md
   - 📡 光通信:
     - 领域总览: 光通信/index.md
     - 📡 光模块深度解读: 光通信/光模块/index.md
