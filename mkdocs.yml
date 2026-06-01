@@ -54,6 +54,11 @@ nav:
     - Broadcom (AVGO): 光通信/broadcom.md
   - 🔵 算力芯片:
     - 领域总览: 算力芯片/index.md
+    - 🥇 NVIDIA (NVDA): 算力芯片/nvda.md
+    - 🥈 AMD (AMD): 算力芯片/amd.md
+    - 🔷 Broadcom (AVGO): 算力芯片/avgo.md
+    - 🇨🇳 寒武纪 (688256): 算力芯片/688256.md
+    - 🇨🇳 海光信息 (688041): 算力芯片/688041.md
   - 💾 存储芯片:
     - 领域总览: 存储芯片/index.md
   - 🌡️ 液冷/散热:
