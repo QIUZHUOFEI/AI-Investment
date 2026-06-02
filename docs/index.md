@@ -13,44 +13,44 @@ AI 不是一家公司能做完的。从你向 ChatGPT 提问，到 GPU 开始计
 ```mermaid
 graph TB
     subgraph U["🎯 你看到的应用"]
-        APP["ChatGPT / DeepSeek / Midjourney<br/>你点的每一次"发送"，背后是一整个产业链在运转"]
+        APP["ChatGPT / DeepSeek / Midjourney<br/>你点的每一次「发送」，背后是一整个产业链在运转"]
     end
 
-    subgraph L1["① 算力芯片 —— AI 的\"大脑\""]
+    subgraph L1["① 算力芯片 —— AI 的大脑"]
         GPU["NVIDIA / AMD<br/>通用 GPU，算力的核心"]
         ASIC["Broadcom / Marvell<br/>定制芯片，大厂自研"]
         CN_GPU["寒武纪 / 海光信息<br/>🇨🇳 国产追赶中"]
     end
 
-    subgraph L2["② 光通信 —— AI 的\"血管\""]
+    subgraph L2["② 光通信 —— AI 的血管"]
         OPTICS["Lumentum / Coherent<br/>中际旭创 / Broadcom<br/>光纤把数据从一台 GPU 传到另一台"]
     end
 
-    subgraph L3["③ 存储芯片 —— AI 的\"记忆\""]
-        MEM["三星 / SK海力士 / 美光<br/>HBM 是 GPU 的"高速缓存""]
+    subgraph L3["③ 存储芯片 —— AI 的记忆"]
+        MEM["三星 / SK海力士 / 美光<br/>HBM 是 GPU 的高速缓存"]
     end
 
-    subgraph L4["④ 先进封装 —— 把芯片\"粘\"起来"]
+    subgraph L4["④ 先进封装 —— 把芯片粘起来"]
         PACK["台积电 CoWoS / 日月光 / 长电<br/>把 GPU + 内存贴在一起，实现 TB/s 级互联"]
     end
 
-    subgraph L5["⑤ PCB与连接器 —— AI 的\"骨架\""]
-        PCB["欣兴电子 / 沪电 / 深南<br/>承载所有芯片的\"电路板\""]
+    subgraph L5["⑤ PCB与连接器 —— AI 的骨架"]
+        PCB["欣兴电子 / 沪电 / 深南<br/>承载所有芯片的电路板"]
     end
 
     subgraph L6["⑥ 液冷/散热 —— 防止 GPU 烧掉"]
-        COOL["维谛 / 英维克<br/>AI 服务器功耗 ~120kW，必须液冷"]
+        COOL["维谛 / 英维克<br/>AI 服务器功耗 120kW，必须液冷"]
     end
 
-    subgraph L7["⑦ 服务器整机 —— 组装成一台\"超级电脑\""]
+    subgraph L7["⑦ 服务器整机 —— 组装成超级电脑"]
         SRV["NVL72 / 浪潮 / 工业富联<br/>把 GPU + CPU + 内存 + 网卡装进机柜"]
     end
 
-    subgraph L8["⑧ 算力基础设施 —— AI 的\"房地产\""]
+    subgraph L8["⑧ 算力基础设施 —— AI 的房地产"]
         IDC["数据中心 / 云计算<br/>润泽 / 万国数据"]
     end
 
-    subgraph L9["⑨ 半导体设备 —— 制造芯片的\"工具\""]
+    subgraph L9["⑨ 半导体设备 —— 制造芯片的工具"]
         EQPT["光刻机 / 刻蚀机 / 薄膜沉积<br/>ASML / 中微 / 北方华创"]
     end
 
