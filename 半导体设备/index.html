@@ -1,0 +1,3135 @@
+
+<!doctype html>
+<html lang="zh" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="AI 产业链投资分析报告 — 从芯片到应用，全景透视">
+      
+      
+        <meta name="author" content="AI Agent">
+      
+      
+        <link rel="canonical" href="https://QIUZHUOFEI.github.io/AI-Investment/%E5%8D%8A%E5%AF%BC%E4%BD%93%E8%AE%BE%E5%A4%87/">
+      
+      
+        <link rel="prev" href="..">
+      
+      
+        <link rel="next" href="688012/">
+      
+      
+        
+      
+      
+      <link rel="icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.6">
+    
+    
+      
+        <title>💡 光刻机入门 - AI 产业链投资分析</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.484c7ddc.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="blue">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#_1" class="md-skip">
+          跳转至
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="页眉">
+    <a href=".." title="AI 产业链投资分析" class="md-header__button md-logo" aria-label="AI 产业链投资分析" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            AI 产业链投资分析
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              💡 光刻机入门
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+    
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="搜索" placeholder="搜索" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="查找">
+        
+        <button type="reset" class="md-search__icon md-icon" title="清空当前内容" aria-label="清空当前内容" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            正在初始化搜索引擎
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/QIUZHUOFEI/AI-Investment" title="前往仓库" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    AI-Investment
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="导航栏" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="AI 产业链投资分析" class="md-nav__button md-logo" aria-label="AI 产业链投资分析" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    AI 产业链投资分析
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/QIUZHUOFEI/AI-Investment" title="前往仓库" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    AI-Investment
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    🏠 首页
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="./" class="md-nav__link md-nav__link--active">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    🛠️ 半导体设备
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link md-nav__link--active" for="__nav_2" id="__nav_2_label" tabindex="">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    🛠️ 半导体设备
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="688012/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    🇨🇳 中微公司 (688012)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="002371/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    🇨🇳 北方华创 (002371)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="smee/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    🏭 上海微电子 SMEE (未上市)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../%E5%85%89%E9%80%9A%E4%BF%A1/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    📡 光通信
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_3" id="__nav_3_label" tabindex="">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    📡 光通信
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E5%85%89%E9%80%9A%E4%BF%A1/%E5%85%89%E6%A8%A1%E5%9D%97/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    📡 光模块深度解读
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E5%85%89%E9%80%9A%E4%BF%A1/lumentum/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Lumentum (LITE)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E5%85%89%E9%80%9A%E4%BF%A1/coherent/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Coherent (COHR)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E5%85%89%E9%80%9A%E4%BF%A1/%E4%B8%AD%E9%99%85%E6%97%AD%E5%88%9B/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    中际旭创 (300308)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E5%85%89%E9%80%9A%E4%BF%A1/broadcom/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Broadcom (AVGO)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../%E7%AE%97%E5%8A%9B%E8%8A%AF%E7%89%87/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    🔵 算力芯片
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_4" id="__nav_4_label" tabindex="">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    🔵 算力芯片
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E7%AE%97%E5%8A%9B%E8%8A%AF%E7%89%87/nvda/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    🥇 NVIDIA (NVDA)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E7%AE%97%E5%8A%9B%E8%8A%AF%E7%89%87/amd/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    🥈 AMD (AMD)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E7%AE%97%E5%8A%9B%E8%8A%AF%E7%89%87/avgo/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    🔷 Broadcom (AVGO)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E7%AE%97%E5%8A%9B%E8%8A%AF%E7%89%87/688256/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    🇨🇳 寒武纪 (688256)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E7%AE%97%E5%8A%9B%E8%8A%AF%E7%89%87/688041/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    🇨🇳 海光信息 (688041)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E7%AE%97%E5%8A%9B%E8%8A%AF%E7%89%87/huawei-ascend/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    🏭 华为昇腾 (未上市)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../%E5%AD%98%E5%82%A8%E8%8A%AF%E7%89%87/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    💾 存储芯片
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_5" id="__nav_5_label" tabindex="">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    💾 存储芯片
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E5%AD%98%E5%82%A8%E8%8A%AF%E7%89%87/samsung/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    🇰🇷 三星电子 (SSNLF)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E5%AD%98%E5%82%A8%E8%8A%AF%E7%89%87/skhynix/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    🇰🇷 SK 海力士 (000660.KS)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E5%AD%98%E5%82%A8%E8%8A%AF%E7%89%87/mu/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    🇺🇸 美光科技 (MU)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E5%AD%98%E5%82%A8%E8%8A%AF%E7%89%87/ymtc/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    🏭 长江存储 (未上市)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../%E6%B6%B2%E5%86%B7/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    🌡️ 液冷/散热
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_6" id="__nav_6_label" tabindex="">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    🌡️ 液冷/散热
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E6%B6%B2%E5%86%B7/vrt/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    🌐 维谛技术 (VRT)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E6%B6%B2%E5%86%B7/002837/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    🇨🇳 英维克 (002837)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E6%B6%B2%E5%86%B7/300499/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    🇨🇳 高澜股份 (300499)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../%E6%9C%8D%E5%8A%A1%E5%99%A8/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    🖥️ 服务器/整机
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_7" id="__nav_7_label" tabindex="">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_7">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    🖥️ 服务器/整机
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E6%9C%8D%E5%8A%A1%E5%99%A8/nvl72/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    🧩 NVL72 深度拆解
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_8" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../%E7%AE%97%E5%8A%9B%E5%9F%BA%E7%A1%80%E8%AE%BE%E6%96%BD/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    🏭 算力基础设施
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_8" id="__nav_8_label" tabindex="">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_8_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_8">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    🏭 算力基础设施
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E7%AE%97%E5%8A%9B%E5%9F%BA%E7%A1%80%E8%AE%BE%E6%96%BD/idc/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    🏠 数据中心（IDC）
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E7%AE%97%E5%8A%9B%E5%9F%BA%E7%A1%80%E8%AE%BE%E6%96%BD/neocloud/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    ☁️ 算力租赁（Neocloud）
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_9" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../%E5%85%88%E8%BF%9B%E5%B0%81%E8%A3%85/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    🔬 先进封装
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_9" id="__nav_9_label" tabindex="">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_9_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_9">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    🔬 先进封装
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E5%85%88%E8%BF%9B%E5%B0%81%E8%A3%85/tsmc/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    🥇 台积电封装（TSM）
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E5%85%88%E8%BF%9B%E5%B0%81%E8%A3%85/asx/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    🥈 日月光投控（ASX）
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E5%85%88%E8%BF%9B%E5%B0%81%E8%A3%85/amkr/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    🥉 Amkor（AMKR）
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E5%85%88%E8%BF%9B%E5%B0%81%E8%A3%85/600584/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    🇨🇳 长电科技（600584）
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E5%85%88%E8%BF%9B%E5%B0%81%E8%A3%85/002156/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    🇨🇳 通富微电（002156）
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_10" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../PCB/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    🔌 PCB与连接器
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_10" id="__nav_10_label" tabindex="">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_10_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_10">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    🔌 PCB与连接器
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../PCB/unimicron/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    🌐 欣兴电子 (3037.TW)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../PCB/002463/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    🇨🇳 沪电股份 (002463)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../PCB/002916/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    🇨🇳 深南电路 (002916)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../PCB/002938/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    🇨🇳 鹏鼎控股 (002938)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_11" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../%E4%BA%BA%E5%BD%A2%E6%9C%BA%E5%99%A8%E4%BA%BA/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    🤖 人形机器人
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_11_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_11">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    🤖 人形机器人
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_12" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../%E5%AF%B9%E6%AF%94/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    📊 全产业链对比
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_12_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_12">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    📊 全产业链对比
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="目录">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        一、光刻机到底是干什么的？
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        二、光刻技术演进路线
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#euv-vs-duv" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        三、EUV vs DUV：核心区别一张表看懂
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        四、全球光刻机市场格局
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="四、全球光刻机市场格局">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        下游客户格局
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#asml" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        五、🔴 ASML（阿斯麦）——光刻机之王
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="五、🔴 ASML（阿斯麦）——光刻机之王">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        基本信息
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_7" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        产品线
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_8" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        出口管制对中国的影响
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#smee" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        六、🟢 SMEE（上海微电子）——中国光刻机的希望
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="六、🟢 SMEE（上海微电子）——中国光刻机的希望">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_9" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        基本信息
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_10" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        产品现状
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#asml_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        与 ASML 的真实差距
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_11" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        产业链战略地位
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_12" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        七、光刻机投资方向
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="七、光刻机投资方向">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_13" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        已上市相关标的
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_14" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        需要关注的核心催化剂
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_15" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        八、一张图看懂光刻机行业
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_16" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        九、常见小白问题
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="九、常见小白问题">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#q1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Q1：光刻机一台真的值几亿美元吗？
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#q2-asml-euv" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Q2：为什么只有 ASML 能做 EUV？
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#q3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Q3：中国能不能绕开光刻机造芯片？
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#q4smee-28nm" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Q4：SMEE 能做 28nm 了吗？
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#q5" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Q5：普通人怎么投资光刻机？
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_17" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        十、其他关键半导体设备
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="十、其他关键半导体设备">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-etch" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ① 🧪 刻蚀设备（Etch）
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-deposition" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ② 🧪 薄膜沉积设备（Deposition）
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-inspection-metrology" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ③ 🔍 检测设备（Inspection &amp; Metrology）
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_18" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        三大设备赛道对比
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+  
+  
+
+
+<h1 id="_1">🛠️ 半导体设备——芯片是怎么"印"出来的<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h1>
+<blockquote>
+<p><strong>写给小白看的光刻机科普</strong>，看完你就能理解：</p>
+<ul>
+<li>光刻机到底干什么的，为什么价值几亿美元一台</li>
+<li>EUV 和 DUV 到底有什么区别</li>
+<li>荷兰 ASML 凭什么垄断全球高端光刻机市场</li>
+<li>上海微电子（SMEE）跟 ASML 差距多大，中国追赶到了哪一步</li>
+<li>光刻机相关的投资方向和关键公司</li>
+</ul>
+</blockquote>
+<h2 id="_2">一、光刻机到底是干什么的？<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h2>
+<p><strong>一句话：光刻机就是一台纳米级超高精度投影仪。</strong></p>
+<p>芯片制造的本质，是把设计好的电路图"印"到硅片上。光刻机就是干这个活的：</p>
+<blockquote>
+<p><strong>掩模版（底片）→ 光学镜头系统 → 把电路图案缩小投射到硅片表面的光刻胶上 → 显影/刻蚀 → 图案刻到硅片上</strong></p>
+</blockquote>
+<p>你常听到的"7nm、5nm、3nm"工艺节点，<strong>核心就是光刻机能印多细的线</strong>。线越细，同样面积的芯片里能塞的晶体管越多，性能越强、功耗越低。</p>
+<pre class="mermaid"><code>flowchart LR
+    A[💡 掩模版&lt;br/&gt;电路图案] --&gt; B[🔍 光学镜头&lt;br/&gt;缩小投影]
+    B --&gt; C[💎 硅片&lt;br/&gt;涂光刻胶]
+    C --&gt; D[🧪 显影刻蚀]
+    D --&gt; E[✅ 芯片电路&lt;br/&gt;成型]
+
+    style A fill:#e3f2fd,stroke:#1565c0
+    style B fill:#fff3e0,stroke:#e65100
+    style C fill:#f3e5f5,stroke:#7b1fa2
+    style D fill:#e8f5e9,stroke:#2e7d32
+    style E fill:#fff,stroke:#333</code></pre>
+<h2 id="_3">二、光刻技术演进路线<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h2>
+<p>光刻机的技术史，就是<strong>波长越来越短、线宽越来越细</strong>的历史。</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: center;">世代</th>
+<th style="text-align: left;">光源波长</th>
+<th style="text-align: left;">典型工艺节点</th>
+<th style="text-align: left;">活跃年代</th>
+<th style="text-align: left;">一句话</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center;"><strong>i-line</strong></td>
+<td style="text-align: left;">365nm（汞灯）</td>
+<td style="text-align: left;">≥ 350nm</td>
+<td style="text-align: left;">90年代</td>
+<td style="text-align: left;">古董级，现在老传感器还在用</td>
+</tr>
+<tr>
+<td style="text-align: center;"><strong>KrF</strong></td>
+<td style="text-align: left;">248nm（准分子激光）</td>
+<td style="text-align: left;">250nm → 130nm</td>
+<td style="text-align: left;">2000年前后</td>
+<td style="text-align: left;">成熟技术，功率器件/模拟芯片还在用</td>
+</tr>
+<tr>
+<td style="text-align: center;"><strong>ArF 干式</strong></td>
+<td style="text-align: left;">193nm</td>
+<td style="text-align: left;">130nm → 65nm</td>
+<td style="text-align: left;">2000年代中期</td>
+<td style="text-align: left;">DUV 时代主力</td>
+</tr>
+<tr>
+<td style="text-align: center;"><strong>ArF 浸没式</strong></td>
+<td style="text-align: left;">193nm（镜头泡水，等效134nm）</td>
+<td style="text-align: left;"><strong>65nm → 7nm</strong>（配合多重曝光）</td>
+<td style="text-align: left;">2010年代至今</td>
+<td style="text-align: left;"><strong>DUV 终极形态，目前最广泛的高端设备</strong></td>
+</tr>
+<tr>
+<td style="text-align: center;"><strong>EUV</strong></td>
+<td style="text-align: left;"><strong>13.5nm</strong></td>
+<td style="text-align: left;"><strong>7nm → 3nm</strong></td>
+<td style="text-align: left;">2020年代至今</td>
+<td style="text-align: left;"><strong>当今最先进，做手机CPU/AI芯片的必需品</strong></td>
+</tr>
+<tr>
+<td style="text-align: center;"><strong>High-NA EUV</strong></td>
+<td style="text-align: left;">13.5nm（数值孔径 0.33→0.55）</td>
+<td style="text-align: left;"><strong>2nm 及以下</strong></td>
+<td style="text-align: left;">2025年起</td>
+<td style="text-align: left;"><strong>下一代，单台造价超5亿美元</strong></td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p><strong>📌 关键名词</strong>：
+- <strong>DUV</strong>（Deep UltraViolet，深紫外）= KrF + ArF 系列的总称
+- <strong>EUV</strong>（Extreme UltraViolet，极紫外）= 13.5nm 全新光源，7nm 以下工艺必须用
+- <strong>浸没式</strong> = 镜头和硅片之间注一层纯水，等效缩短波长，是 DUV 的"超频玩法"</p>
+</blockquote>
+<h2 id="euv-vs-duv">三、EUV vs DUV：核心区别一张表看懂<a class="headerlink" href="#euv-vs-duv" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">对比维度</th>
+<th style="text-align: left;">DUV（ArF浸没式）</th>
+<th style="text-align: left;">EUV（极紫外）</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>光源波长</strong></td>
+<td style="text-align: left;">193nm（深紫外）</td>
+<td style="text-align: left;"><strong>13.5nm</strong>（只有1/14）</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>光学系统</strong></td>
+<td style="text-align: left;">透镜（透射式）</td>
+<td style="text-align: left;"><strong>多层钼/硅反射镜</strong>（反射式）—— EUV 能被空气吸收，必须在真空中反射</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>光源怎么产生</strong></td>
+<td style="text-align: left;">准分子激光器（成熟技术）</td>
+<td style="text-align: left;">用超高功率 CO₂ 激光轰击锡滴产生等离子体，极其复杂，功耗~30kW</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>工作环境</strong></td>
+<td style="text-align: left;">常压空气或惰性气体</td>
+<td style="text-align: left;"><strong>超高真空</strong>（空气会吸收 EUV）</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>单台造价</strong></td>
+<td style="text-align: left;"><strong>~6000万美元</strong></td>
+<td style="text-align: left;"><strong>3~4亿美元</strong>（High-NA 超过5亿）</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>单次曝光分辨率</strong></td>
+<td style="text-align: left;">~38nm 极限（靠多重曝光做到7nm）</td>
+<td style="text-align: left;">~13nm（一次搞定7nm以下）</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>主要使用方</strong></td>
+<td style="text-align: left;">几乎所有晶圆厂</td>
+<td style="text-align: left;">仅台积电、三星、英特尔、SK海力士</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>年产量</strong></td>
+<td style="text-align: left;">数百台</td>
+<td style="text-align: left;">约40~50台</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>💡 <strong>简单记</strong>：EUV 就是光刻机里的"光刻机"——一台 3 亿美元起步，全球 95% 以上的先进芯片都靠它生产。</p>
+</blockquote>
+<h2 id="_4">四、全球光刻机市场格局<a class="headerlink" href="#_4" title="Permanent link">&para;</a></h2>
+<p>这是一个<strong>高度垄断</strong>的市场，三家日本+荷兰公司吃掉了全球几乎全部份额：</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">公司</th>
+<th style="text-align: left;">国家</th>
+<th style="text-align: left;">地位</th>
+<th style="text-align: left;">市场销售额份额</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>🔴 ASML（阿斯麦）</strong></td>
+<td style="text-align: left;">🇳🇱 荷兰</td>
+<td style="text-align: left;"><strong>绝对霸主</strong>——全球唯一能做 EUV 的公司，DUV 也是龙头</td>
+<td style="text-align: left;"><strong>~85~90%</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Canon（佳能）</strong></td>
+<td style="text-align: left;">🇯🇵 日本</td>
+<td style="text-align: left;">低端 DUV（i-line/KrF），也在搞纳米压印（NIL）弯道超车</td>
+<td style="text-align: left;">~10%</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Nikon（尼康）</strong></td>
+<td style="text-align: left;">🇯🇵 日本</td>
+<td style="text-align: left;">以前很强，现在只做中低端 DUV</td>
+<td style="text-align: left;">~5%</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>SMEE（上海微电子）</strong></td>
+<td style="text-align: left;">🇨🇳 中国</td>
+<td style="text-align: left;">能做90nm前道光刻机，封装光刻有竞争力</td>
+<td style="text-align: left;">&lt;1%</td>
+</tr>
+</tbody>
+</table>
+<pre class="mermaid"><code>pie title 全球光刻机市场份额（按销售额）
+    "ASML" : 87
+    "Canon" : 8
+    "Nikon" : 4
+    "SMEE" : 1</code></pre>
+<h3 id="_5">下游客户格局<a class="headerlink" href="#_5" title="Permanent link">&para;</a></h3>
+<p>三大客户几乎买走了全部 EUV 和高端 DUV：</p>
+<ol>
+<li><strong>台积电</strong>（TSMC）—— 最大客户，占 ASML 营收约 35~40%，大量采购 EUV 用于 3nm/5nm 量产</li>
+<li><strong>三星电子</strong>（Samsung）—— 占比约 25~30%，EUV 用于 DRAM 和逻辑代工</li>
+<li><strong>英特尔</strong>（Intel）—— 占比约 15%，大力投资 High-NA EUV 用于 18A 等节点</li>
+<li><strong>SK海力士</strong> —— 占比约 8%，主要用于 DRAM EUV 层</li>
+<li><strong>中芯国际（SMIC）及其他中国客户</strong> —— 受限，仅能采购部分 DUV</li>
+</ol>
+<h2 id="asml">五、🔴 ASML（阿斯麦）——光刻机之王<a class="headerlink" href="#asml" title="Permanent link">&para;</a></h2>
+<h3 id="_6">基本信息<a class="headerlink" href="#_6" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">项目</th>
+<th style="text-align: left;">数据</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>全称</strong></td>
+<td style="text-align: left;">ASML Holding N.V.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>总部</strong></td>
+<td style="text-align: left;">荷兰费尔德霍芬（Veldhoven）</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>成立</strong></td>
+<td style="text-align: left;">1984 年</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>美股代码</strong></td>
+<td style="text-align: left;"><strong>ASML</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>市值</strong></td>
+<td style="text-align: left;">约 <strong>3500~3800亿美元</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>2024年营收</strong></td>
+<td style="text-align: left;">约 <strong>280亿欧元</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>2024年净利润</strong></td>
+<td style="text-align: left;">约 <strong>78亿欧元</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>毛利率</strong></td>
+<td style="text-align: left;">约 51~53%</td>
+</tr>
+</tbody>
+</table>
+<h3 id="_7">产品线<a class="headerlink" href="#_7" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">产品</th>
+<th style="text-align: left;">型号</th>
+<th style="text-align: left;">单价</th>
+<th style="text-align: left;">用途</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>EUV</strong></td>
+<td style="text-align: left;">NXE:3800E</td>
+<td style="text-align: left;"><strong>~2亿欧元/台</strong></td>
+<td style="text-align: left;">7nm 及以下先进制程</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>High-NA EUV</strong></td>
+<td style="text-align: left;">EXE:5200</td>
+<td style="text-align: left;"><strong>~5亿美元/台</strong></td>
+<td style="text-align: left;">2nm 以下，已交付英特尔</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>ArF浸没式 DUV</strong></td>
+<td style="text-align: left;">NXT:2100i</td>
+<td style="text-align: left;">~6000万美元</td>
+<td style="text-align: left;">65nm~7nm（出口受限）</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>ArF干式/ KrF DUV</strong></td>
+<td style="text-align: left;">NXT:1470 等</td>
+<td style="text-align: left;">~2000万美元</td>
+<td style="text-align: left;">成熟制程，中国还能买到部分</td>
+</tr>
+</tbody>
+</table>
+<h3 id="_8">出口管制对中国的影响<a class="headerlink" href="#_8" title="Permanent link">&para;</a></h3>
+<p>自2019年起，荷兰政府跟随美国实施对华出口管制：</p>
+<ul>
+<li><strong>EUV</strong>：2019年起已全面禁运</li>
+<li><strong>高端 DUV</strong>（NXT:2100i 等）：2023年起需申请许可证，2024年进一步收紧</li>
+<li><strong>结果</strong>：2023年中国曾占 ASML 营收 <strong>46%</strong>（大量囤货），2025年预计降至 <strong>15~20%</strong></li>
+</ul>
+<blockquote>
+<p>💡 <strong>对投资者</strong>：出口管制既是 ASML 的风险（失去中国订单），也是中国国产替代的催化剂。每次管制升级，中国半导体设备板块都会有一波行情。</p>
+</blockquote>
+<h2 id="smee">六、🟢 SMEE（上海微电子）——中国光刻机的希望<a class="headerlink" href="#smee" title="Permanent link">&para;</a></h2>
+<h3 id="_9">基本信息<a class="headerlink" href="#_9" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">项目</th>
+<th style="text-align: left;">数据</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>全称</strong></td>
+<td style="text-align: left;">上海微电子装备（集团）股份有限公司</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>成立</strong></td>
+<td style="text-align: left;">2002年，上海张江</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>性质</strong></td>
+<td style="text-align: left;">国有/混合所有制，国家半导体装备核心企业</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>员工</strong></td>
+<td style="text-align: left;">~2000人</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>定位</strong></td>
+<td style="text-align: left;">中国目前<strong>唯一能量产光刻机的企业</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>上市状态</strong></td>
+<td style="text-align: left;"><strong>未上市</strong>（科创板曾有传闻，至今未落实）</td>
+</tr>
+</tbody>
+</table>
+<h3 id="_10">产品现状<a class="headerlink" href="#_10" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">产品系列</th>
+<th style="text-align: left;">技术节点</th>
+<th style="text-align: left;">应用领域</th>
+<th style="text-align: left;">竞争力</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>SSB系列</strong>（步进式投影）</td>
+<td style="text-align: left;">90nm~350nm</td>
+<td style="text-align: left;">先进封装、MEMS、LED、功率器件</td>
+<td style="text-align: left;">✅ 国内封装市场有一定份额</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>SSA系列</strong>（步进扫描）</td>
+<td style="text-align: left;"><strong>~90nm</strong></td>
+<td style="text-align: left;">前道光刻（低端芯片）</td>
+<td style="text-align: left;">⚠️ 能交付量产，但节点落后</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>28nm浸没式</strong>（研发中）</td>
+<td style="text-align: left;">28nm（目标）</td>
+<td style="text-align: left;">先进制程</td>
+<td style="text-align: left;">❓ 量产时间未官方确认</td>
+</tr>
+</tbody>
+</table>
+<h3 id="asml_1">与 ASML 的真实差距<a class="headerlink" href="#asml_1" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">维度</th>
+<th style="text-align: left;">SMEE</th>
+<th style="text-align: left;">ASML</th>
+<th style="text-align: left;">差距</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>能量产的最先进节点</strong></td>
+<td style="text-align: left;"><strong>~90nm</strong></td>
+<td style="text-align: left;"><strong>3nm（EUV）</strong></td>
+<td style="text-align: left;"><strong>约6~7代，15~20年</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>光源</strong></td>
+<td style="text-align: left;">193nm ArF（干式，关键部件进口）</td>
+<td style="text-align: left;">EUV 13.5nm（自研+Cymer）</td>
+<td style="text-align: left;">整个时代差</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>核心部件自主化</strong></td>
+<td style="text-align: left;">镜头、光源、光刻胶依赖进口</td>
+<td style="text-align: left;">自研+全球顶尖供应链</td>
+<td style="text-align: left;">生态差距巨大</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>全球市占率</strong></td>
+<td style="text-align: left;">&lt;1%（仅国内封装市场）</td>
+<td style="text-align: left;">85~90%（全球垄断）</td>
+<td style="text-align: left;">不是一个量级</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>研发投入</strong></td>
+<td style="text-align: left;">数十亿人民币</td>
+<td style="text-align: left;"><strong>数十亿欧元</strong>（2024年研发投入超40亿欧）</td>
+<td style="text-align: left;">投入差了一个数量级</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>年产量</strong></td>
+<td style="text-align: left;">数十台</td>
+<td style="text-align: left;">数百台（包含所有类型）</td>
+<td style="text-align: left;">—</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>能服务的客户</strong></td>
+<td style="text-align: left;">封测厂 + 低端晶圆厂</td>
+<td style="text-align: left;">全球所有顶级芯片厂</td>
+<td style="text-align: left;">—</td>
+</tr>
+</tbody>
+</table>
+<h3 id="_11">产业链战略地位<a class="headerlink" href="#_11" title="Permanent link">&para;</a></h3>
+<p>虽然技术差距巨大，但 SMEE 在中国半导体"自主可控"战略中位置极其重要：</p>
+<ol>
+<li><strong>唯一量产选手</strong>——中国没有第二家能造光刻机的公司，SMEE 就是"全村希望"</li>
+<li><strong>封装光刻国产化</strong>——在先进封装领域已实现较高国产替代率</li>
+<li><strong>技术练兵场</strong>——镜头、光源、运动台等子系统每突破一个，整个产业链就上一个台阶</li>
+<li><strong>政策持续加持</strong>——国家大基金、02专项持续支持，不追求短期盈利</li>
+</ol>
+<blockquote>
+<p>⚠️ <strong>投资提示</strong>：SMEE 目前<strong>未上市</strong>，散户无法直接投资。真正受益于光刻机国产化的上市公司，是<strong>上游供应链</strong>（镜头、光源、精密运动台、光刻胶等），详见下一节。</p>
+</blockquote>
+<h2 id="_12">七、光刻机投资方向<a class="headerlink" href="#_12" title="Permanent link">&para;</a></h2>
+<h3 id="_13">已上市相关标的<a class="headerlink" href="#_13" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">公司</th>
+<th style="text-align: left;">代码</th>
+<th style="text-align: left;">说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>ASML（阿斯麦）</strong></td>
+<td style="text-align: left;"><strong>ASML</strong>（美股）</td>
+<td style="text-align: left;">全球光刻机绝对龙头，垄断 EUV 市场，确定性高。PE ~35-40x，适合长期关注</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>A 股所谓的「光刻机供应链」公司大多处于研发投入期，盈利不稳定，与 ASML 的实际业务关联度有限，不存在真正意义上的「光刻机概念核心标的」。</p>
+</blockquote>
+<h3 id="_14">需要关注的核心催化剂<a class="headerlink" href="#_14" title="Permanent link">&para;</a></h3>
+<ol>
+<li><strong>出口管制升级</strong> → 中国光刻机板块短期炒作机会</li>
+<li><strong>SMEE 28nm 光刻机验证/量产消息</strong> → 国产设备里程碑事件</li>
+<li><strong>ASML 季度订单数据</strong> → 全球芯片景气度的领先指标</li>
+<li><strong>High-NA EUV 量产进展</strong> → 决定台积电/三星/英特尔 2nm 竞赛走向</li>
+<li><strong>佳能纳米压印（NIL）产业化进展</strong> → 可能颠覆部分 EUV 市场</li>
+</ol>
+<h2 id="_15">八、一张图看懂光刻机行业<a class="headerlink" href="#_15" title="Permanent link">&para;</a></h2>
+<pre class="mermaid"><code>flowchart TB
+    subgraph 上游["⬆️ 上游供应链"]
+        A1["🔬 光源&lt;br/&gt;Cymer(ASML旗下)&lt;br/&gt;中国依赖进口"]
+        A2["🔍 光学镜头&lt;br/&gt;蔡司(独家供ASML)&lt;br/&gt;茂莱光学(国产)"]
+        A3["⚙️ 精密运动台&lt;br/&gt;华卓精科(国产)"]
+        A4["🧪 光刻胶&lt;br/&gt;日本JSR/TOK垄断&lt;br/&gt;晶瑞/南大追赶"]
+    end
+
+    subgraph 中游["📟 光刻机整机"]
+        B1["🔴 ASML（荷兰）&lt;br/&gt;EUV+DUV 全球垄断"]
+        B2["📷 Canon（日本）&lt;br/&gt;低端DUV+NIL"]
+        B3["📷 Nikon（日本）&lt;br/&gt;中低端DUV"]
+        B4["🟢 SMEE（中国）&lt;br/&gt;90nm+封装"]
+    end
+
+    subgraph 下游["⬇️ 晶圆制造"]
+        C1["🏭 台积电&lt;br/&gt;全球最大买家"]
+        C2["🏭 三星&lt;br/&gt;DRAM+代工"]
+        C3["🏭 英特尔&lt;br/&gt;IDM 2.0"]
+        C4["🏭 中芯国际&lt;br/&gt;限购成熟DUV"]
+    end
+
+    A1 --&gt; B1
+    A2 --&gt; B1
+    A2 --&gt; B4
+    A3 --&gt; B4
+    A2 --&gt; B2
+    A2 --&gt; B3
+
+    B1 --&gt; C1
+    B1 --&gt; C2
+    B1 --&gt; C3
+    B2 --&gt; C4
+    B3 --&gt; C4
+    B4 --&gt; C4
+
+    style B1 fill:#ff1744,color:#fff
+    style B4 fill:#00e676,color:#000
+    style A2 fill:#fff3e0,stroke:#e65100</code></pre>
+<h2 id="_16">九、常见小白问题<a class="headerlink" href="#_16" title="Permanent link">&para;</a></h2>
+<h3 id="q1">Q1：光刻机一台真的值几亿美元吗？<a class="headerlink" href="#q1" title="Permanent link">&para;</a></h3>
+<p><strong>真的。</strong> ASML 的 EUV 光刻机约 <strong>3~4亿美元/台</strong>，High-NA 版本超过 <strong>5亿美元</strong>。比一架波音 787 客机还贵。全球每年只生产 40~50 台，全部被台积电、三星、英特尔买走。</p>
+<h3 id="q2-asml-euv">Q2：为什么只有 ASML 能做 EUV？<a class="headerlink" href="#q2-asml-euv" title="Permanent link">&para;</a></h3>
+<p>因为 EUV 的技术壁垒极高：
+- 光源需要在真空环境中用激光轰击锡滴产生 13.5nm 波长
+- 镜面需要几十层钼/硅交替镀膜，反射率做到 70% 以上
+- 系统需要数万个精密部件协同工作
+- 20 年烧了超过 100 亿欧元研发投入</p>
+<h3 id="q3">Q3：中国能不能绕开光刻机造芯片？<a class="headerlink" href="#q3" title="Permanent link">&para;</a></h3>
+<p><strong>不能完全绕开，但可以做芯片设计层面的优化：</strong>
+- <strong>先进封装</strong>（Chiplet/CoWoS）可以把成熟工艺的芯片拼起来，部分弥补制程不足
+- <strong>但 7nm 以下的 CPU/GPU/AI 芯片，必须用 EUV 光刻</strong>，没有替代方案</p>
+<h3 id="q4smee-28nm">Q4：SMEE 能做 28nm 了吗？<a class="headerlink" href="#q4smee-28nm" title="Permanent link">&para;</a></h3>
+<p><strong>还没确认量产。</strong> 多年传闻 SMEE 在研发 28nm 浸没式光刻机，但卡在光源和镜头两大核心子系统上。官方从未公布量产时间表。目前能稳定量产的最先进节点是 <strong>90nm</strong>。</p>
+<h3 id="q5">Q5：普通人怎么投资光刻机？<a class="headerlink" href="#q5" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>美股</strong>：直接买 ASML（代码：ASML）</li>
+<li><strong>A股</strong>：买光刻机供应链公司（华卓精科、茂莱光学等），但要接受高波动</li>
+<li><strong>ETF</strong>：半导体设备 ETF（如 159516）间接覆盖，分散风险</li>
+</ul>
+<hr />
+<h2 id="_17">十、其他关键半导体设备<a class="headerlink" href="#_17" title="Permanent link">&para;</a></h2>
+<p>光刻机是芯片制造的核心，但不是唯一。芯片制造需要经过 <strong>上千道工序</strong>，主要设备包括：</p>
+<h3 id="1-etch">① 🧪 刻蚀设备（Etch）<a class="headerlink" href="#1-etch" title="Permanent link">&para;</a></h3>
+<p>刻蚀把光刻好的电路图案"刻"到硅片上。光刻只是<strong>画图案</strong>，刻蚀才是<strong>把图案变成立体的</strong>。</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">是什么</th>
+<th style="text-align: left;">为什么重要</th>
+<th style="text-align: left;">🇨🇳 中国差距</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">刻蚀机用等离子体"轰掉"不需要的材料，留下想要的电路结构。3nm 芯片需要 ~100+ 道刻蚀步骤。</td>
+<td style="text-align: left;">刻蚀步骤数量随制程提升暴增——7nm 用 ~50 次，3nm 用 ~100+ 次。</td>
+<td style="text-align: left;">✅ <strong>差距最小！</strong> 中微公司的刻蚀机已经打入台积电 5nm 供应链，全球市占率 ~15%。</td>
+</tr>
+</tbody>
+</table>
+<h3 id="2-deposition">② 🧪 薄膜沉积设备（Deposition）<a class="headerlink" href="#2-deposition" title="Permanent link">&para;</a></h3>
+<p>在硅片上"铺"一层均匀的薄膜——可以是导电的（金属）、绝缘的（氧化物）或半导体的。</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">是什么</th>
+<th style="text-align: left;">为什么重要</th>
+<th style="text-align: left;">🇨🇳 中国差距</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">CVD/PVD/ALD 三种沉积技术，把原子一层层"堆"上去。芯片从上到下几十层结构，每一层都需要沉积。</td>
+<td style="text-align: left;">3D NAND 堆叠层数从 64 层→400+ 层，沉积设备需求暴增。</td>
+<td style="text-align: left;">⚠️ <strong>差距 ~3-5 年。</strong> 北方华创在 PVD/CVD 上已有突破，但高端 ALD 仍落后应用材料。</td>
+</tr>
+</tbody>
+</table>
+<h3 id="3-inspection-metrology">③ 🔍 检测设备（Inspection &amp; Metrology）<a class="headerlink" href="#3-inspection-metrology" title="Permanent link">&para;</a></h3>
+<p>在制造的每一步检查：这步有没有做对？芯片上有没有灰尘/缺陷？</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">是什么</th>
+<th style="text-align: left;">为什么重要</th>
+<th style="text-align: left;">🇨🇳 中国差距</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">检测设备在芯片制造过程中持续扫描，发现纳米级缺陷。一颗 3nm 芯片有 ~200 亿晶体管，任何一处缺陷都会导致整片报废。</td>
+<td style="text-align: left;">良率就是利润。检测设备越精密，良率越高，芯片厂越赚钱。</td>
+<td style="text-align: left;">❌ <strong>差距巨大。</strong> 科磊（KLA）全球垄断 ~55%，国内中科飞测刚起步，产品线还不全。</td>
+</tr>
+</tbody>
+</table>
+<h3 id="_18">三大设备赛道对比<a class="headerlink" href="#_18" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">设备类型</th>
+<th style="text-align: left;">全球龙头</th>
+<th style="text-align: left;">市值</th>
+<th style="text-align: left;">中国对标</th>
+<th style="text-align: left;">中国差距</th>
+<th style="text-align: left;">A股有吗</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>🧪 刻蚀</strong></td>
+<td style="text-align: left;">Lam Research (LRCX)</td>
+<td style="text-align: left;">~$1,200 亿</td>
+<td style="text-align: left;"><strong>中微公司</strong> 🏆</td>
+<td style="text-align: left;">✅ <strong>差距最小</strong></td>
+<td style="text-align: left;">✅ 688012</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>🧪 薄膜沉积</strong></td>
+<td style="text-align: left;">应用材料 (AMAT)</td>
+<td style="text-align: left;"><strong>~$3,638 亿</strong></td>
+<td style="text-align: left;">北方华创</td>
+<td style="text-align: left;">⚠️ 3-5年</td>
+<td style="text-align: left;">✅ 002371</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>🔍 检测</strong></td>
+<td style="text-align: left;">科磊 (KLA)</td>
+<td style="text-align: left;">~$1,000 亿</td>
+<td style="text-align: left;">中科飞测</td>
+<td style="text-align: left;">❌ 巨大</td>
+<td style="text-align: left;">✅ 688361</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>🔑 <strong>核心结论</strong>：所有半导体设备里，<strong>中国差距最小、最值得关注的是刻蚀设备</strong>（中微公司），因为刻蚀步骤数量随 AI 芯片需求暴增，中微已打进台积电 5nm 供应链。</p>
+</blockquote>
+<p>👉 <a href="688012/">查看中微公司分析</a> · <a href="002371/">北方华创分析</a></p>
+<hr />
+<p><em>最后更新：2026-05-26 14:54（北京时间）</em></p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  回到页面顶部
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "..", "features": ["navigation.sections", "navigation.top", "navigation.indexes", "search.suggest", "content.code.copy"], "search": "../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "\u5df2\u590d\u5236", "clipboard.copy": "\u590d\u5236", "search.result.more.one": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.more.other": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 # \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.none": "\u6ca1\u6709\u627e\u5230\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.one": "\u627e\u5230 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.other": "# \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.placeholder": "\u952e\u5165\u4ee5\u5f00\u59cb\u641c\u7d22", "search.result.term.missing": "\u7f3a\u5c11", "select.version": "\u9009\u62e9\u5f53\u524d\u7248\u672c"}, "version": null}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.79ae519e.min.js"></script>
+      
+        <script src="https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.min.js"></script>
+      
+    
+  </body>
+</html>

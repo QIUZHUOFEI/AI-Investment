@@ -1,0 +1,3143 @@
+
+<!doctype html>
+<html lang="zh" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="AI 产业链投资分析报告 — 从芯片到应用，全景透视">
+      
+      
+        <meta name="author" content="AI Agent">
+      
+      
+        <link rel="canonical" href="https://QIUZHUOFEI.github.io/AI-Investment/%E5%85%89%E9%80%9A%E4%BF%A1/%E5%85%89%E6%A8%A1%E5%9D%97/">
+      
+      
+        <link rel="prev" href="../">
+      
+      
+        <link rel="next" href="../lumentum/">
+      
+      
+        
+      
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.6">
+    
+    
+      
+        <title>📡 光模块深度解读 - AI 产业链投资分析</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.484c7ddc.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="blue">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#_1" class="md-skip">
+          跳转至
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="页眉">
+    <a href="../.." title="AI 产业链投资分析" class="md-header__button md-logo" aria-label="AI 产业链投资分析" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            AI 产业链投资分析
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              📡 光模块深度解读
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+    
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="搜索" placeholder="搜索" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="查找">
+        
+        <button type="reset" class="md-search__icon md-icon" title="清空当前内容" aria-label="清空当前内容" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            正在初始化搜索引擎
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/QIUZHUOFEI/AI-Investment" title="前往仓库" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    AI-Investment
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="导航栏" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="AI 产业链投资分析" class="md-nav__button md-logo" aria-label="AI 产业链投资分析" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    AI 产业链投资分析
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/QIUZHUOFEI/AI-Investment" title="前往仓库" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    AI-Investment
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    🏠 首页
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../%E5%8D%8A%E5%AF%BC%E4%BD%93%E8%AE%BE%E5%A4%87/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    🛠️ 半导体设备
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_2" id="__nav_2_label" tabindex="">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    🛠️ 半导体设备
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%E5%8D%8A%E5%AF%BC%E4%BD%93%E8%AE%BE%E5%A4%87/688012/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    🇨🇳 中微公司 (688012)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%E5%8D%8A%E5%AF%BC%E4%BD%93%E8%AE%BE%E5%A4%87/002371/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    🇨🇳 北方华创 (002371)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%E5%8D%8A%E5%AF%BC%E4%BD%93%E8%AE%BE%E5%A4%87/smee/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    🏭 上海微电子 SMEE (未上市)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    📡 光通信
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_3" id="__nav_3_label" tabindex="">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    📡 光通信
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    📡 光模块深度解读
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    📡 光模块深度解读
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="目录">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        一、光模块：算力系统的新瓶颈
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        二、光模块的内部结构
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="二、光模块的内部结构">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        电信号区
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        光信号区
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        三、高速光模块的竞争壁垒：为什么头部能吃肉？
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="三、高速光模块的竞争壁垒：为什么头部能吃肉？">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_7" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        表象：率先绑定北美云厂商大客户
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_8" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        本质：两大核心能力
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="本质：两大核心能力">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ① 封装能力——从焊电路板到系统工程
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ② 系统级交付能力——从标品到定制化
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_9" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        四、光模块会产能过剩吗？
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="四、光模块会产能过剩吗？">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_10" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        核心判断：高端产能过剩风险有限
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_11" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        光芯片为何稀缺？
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_12" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        光芯片核心技术路线
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_13" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        国内光芯片进展
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#cpu" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        五、硅光路线：用造 CPU 的方式造光芯片
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="五、硅光路线：用造 CPU 的方式造光芯片">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_14" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        为什么需要硅光？
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_15" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        硅光时代的产业链新格局
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_16" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        芯片巨头为什么不亲自下场做光模块？
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#cpo" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        六、CPO 时代：光模块产业的终极革命
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="六、CPO 时代：光模块产业的终极革命">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#cpo-pcb" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        CPO 的本质：解决 PCB 电损耗问题
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#lpo" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        过渡方案 LPO：治标不治本
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#cpo_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        CPO 时代的利益分配新格局
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_17" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        七、产业演进的两条核心线索
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_18" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        主要公司地图
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../lumentum/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Lumentum (LITE)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../coherent/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Coherent (COHR)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E4%B8%AD%E9%99%85%E6%97%AD%E5%88%9B/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    中际旭创 (300308)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../broadcom/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Broadcom (AVGO)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../%E7%AE%97%E5%8A%9B%E8%8A%AF%E7%89%87/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    🔵 算力芯片
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_4" id="__nav_4_label" tabindex="">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    🔵 算力芯片
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%E7%AE%97%E5%8A%9B%E8%8A%AF%E7%89%87/nvda/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    🥇 NVIDIA (NVDA)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%E7%AE%97%E5%8A%9B%E8%8A%AF%E7%89%87/amd/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    🥈 AMD (AMD)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%E7%AE%97%E5%8A%9B%E8%8A%AF%E7%89%87/avgo/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    🔷 Broadcom (AVGO)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%E7%AE%97%E5%8A%9B%E8%8A%AF%E7%89%87/688256/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    🇨🇳 寒武纪 (688256)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%E7%AE%97%E5%8A%9B%E8%8A%AF%E7%89%87/688041/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    🇨🇳 海光信息 (688041)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%E7%AE%97%E5%8A%9B%E8%8A%AF%E7%89%87/huawei-ascend/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    🏭 华为昇腾 (未上市)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../%E5%AD%98%E5%82%A8%E8%8A%AF%E7%89%87/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    💾 存储芯片
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_5" id="__nav_5_label" tabindex="">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    💾 存储芯片
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%E5%AD%98%E5%82%A8%E8%8A%AF%E7%89%87/samsung/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    🇰🇷 三星电子 (SSNLF)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%E5%AD%98%E5%82%A8%E8%8A%AF%E7%89%87/skhynix/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    🇰🇷 SK 海力士 (000660.KS)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%E5%AD%98%E5%82%A8%E8%8A%AF%E7%89%87/mu/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    🇺🇸 美光科技 (MU)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%E5%AD%98%E5%82%A8%E8%8A%AF%E7%89%87/ymtc/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    🏭 长江存储 (未上市)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../%E6%B6%B2%E5%86%B7/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    🌡️ 液冷/散热
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_6" id="__nav_6_label" tabindex="">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    🌡️ 液冷/散热
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%E6%B6%B2%E5%86%B7/vrt/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    🌐 维谛技术 (VRT)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%E6%B6%B2%E5%86%B7/002837/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    🇨🇳 英维克 (002837)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%E6%B6%B2%E5%86%B7/300499/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    🇨🇳 高澜股份 (300499)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../%E6%9C%8D%E5%8A%A1%E5%99%A8/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    🖥️ 服务器/整机
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_7" id="__nav_7_label" tabindex="">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_7">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    🖥️ 服务器/整机
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%E6%9C%8D%E5%8A%A1%E5%99%A8/nvl72/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    🧩 NVL72 深度拆解
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_8" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../%E7%AE%97%E5%8A%9B%E5%9F%BA%E7%A1%80%E8%AE%BE%E6%96%BD/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    🏭 算力基础设施
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_8" id="__nav_8_label" tabindex="">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_8_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_8">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    🏭 算力基础设施
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%E7%AE%97%E5%8A%9B%E5%9F%BA%E7%A1%80%E8%AE%BE%E6%96%BD/idc/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    🏠 数据中心（IDC）
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%E7%AE%97%E5%8A%9B%E5%9F%BA%E7%A1%80%E8%AE%BE%E6%96%BD/neocloud/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    ☁️ 算力租赁（Neocloud）
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_9" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../%E5%85%88%E8%BF%9B%E5%B0%81%E8%A3%85/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    🔬 先进封装
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_9" id="__nav_9_label" tabindex="">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_9_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_9">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    🔬 先进封装
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%E5%85%88%E8%BF%9B%E5%B0%81%E8%A3%85/tsmc/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    🥇 台积电封装（TSM）
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%E5%85%88%E8%BF%9B%E5%B0%81%E8%A3%85/asx/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    🥈 日月光投控（ASX）
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%E5%85%88%E8%BF%9B%E5%B0%81%E8%A3%85/amkr/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    🥉 Amkor（AMKR）
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%E5%85%88%E8%BF%9B%E5%B0%81%E8%A3%85/600584/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    🇨🇳 长电科技（600584）
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%E5%85%88%E8%BF%9B%E5%B0%81%E8%A3%85/002156/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    🇨🇳 通富微电（002156）
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_10" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../PCB/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    🔌 PCB与连接器
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_10" id="__nav_10_label" tabindex="">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_10_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_10">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    🔌 PCB与连接器
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../PCB/unimicron/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    🌐 欣兴电子 (3037.TW)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../PCB/002463/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    🇨🇳 沪电股份 (002463)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../PCB/002916/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    🇨🇳 深南电路 (002916)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../PCB/002938/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    🇨🇳 鹏鼎控股 (002938)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_11" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../%E4%BA%BA%E5%BD%A2%E6%9C%BA%E5%99%A8%E4%BA%BA/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    🤖 人形机器人
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_11_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_11">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    🤖 人形机器人
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_12" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../%E5%AF%B9%E6%AF%94/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    📊 全产业链对比
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_12_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_12">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    📊 全产业链对比
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="目录">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        一、光模块：算力系统的新瓶颈
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        二、光模块的内部结构
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="二、光模块的内部结构">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        电信号区
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        光信号区
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        三、高速光模块的竞争壁垒：为什么头部能吃肉？
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="三、高速光模块的竞争壁垒：为什么头部能吃肉？">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_7" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        表象：率先绑定北美云厂商大客户
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_8" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        本质：两大核心能力
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="本质：两大核心能力">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ① 封装能力——从焊电路板到系统工程
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ② 系统级交付能力——从标品到定制化
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_9" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        四、光模块会产能过剩吗？
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="四、光模块会产能过剩吗？">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_10" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        核心判断：高端产能过剩风险有限
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_11" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        光芯片为何稀缺？
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_12" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        光芯片核心技术路线
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_13" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        国内光芯片进展
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#cpu" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        五、硅光路线：用造 CPU 的方式造光芯片
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="五、硅光路线：用造 CPU 的方式造光芯片">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_14" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        为什么需要硅光？
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_15" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        硅光时代的产业链新格局
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_16" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        芯片巨头为什么不亲自下场做光模块？
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#cpo" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        六、CPO 时代：光模块产业的终极革命
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="六、CPO 时代：光模块产业的终极革命">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#cpo-pcb" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        CPO 的本质：解决 PCB 电损耗问题
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#lpo" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        过渡方案 LPO：治标不治本
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#cpo_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        CPO 时代的利益分配新格局
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_17" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        七、产业演进的两条核心线索
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_18" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        主要公司地图
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+  
+  
+
+
+<h1 id="_1">📡 光模块深度解读——为什么业绩分化？会产能过剩吗？<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h1>
+<blockquote>
+<p><strong>本文基于坤元财研（抖音）视频内容整理，深入拆解光模块行业的技术壁垒、竞争格局和未来演进方向。</strong></p>
+<p>"2025 年全球前十大光模块厂商，中国占 7 家；800G 以上的高速率光模块，中国两家头部厂商占据了 60% 以上的市场份额。但全球光模块市场的红利，并没有平均分配给每一位市场参与者。"</p>
+</blockquote>
+<hr />
+<h2 id="_2">一、光模块：算力系统的新瓶颈<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h2>
+<p>过去 5 年，算力芯片的数据吞吐量呈指数级发展，但网络设备的数据传输能力却没有跟上来。<strong>现在卡整个算力系统脖子的已经不是 GPU，而是光模块。</strong></p>
+<p>光模块的核心功能：把 GPU/CPU 的电信号转换成光信号，通过光纤进行长距离高速传输。</p>
+<p>过去光模块的最大买单方是电信运营商——大家刷个视频打个电话，100G 以下的低速光模块就够用了。但 AI 数据中心的逻辑完全不同：</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">维度</th>
+<th style="text-align: left;">电信网络</th>
+<th style="text-align: left;">AI 数据中心</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">用户</td>
+<td style="text-align: left;">人（刷视频、打电话）</td>
+<td style="text-align: left;">GPU（万卡集群疯狂吞吐数据）</td>
+</tr>
+<tr>
+<td style="text-align: left;">速率要求</td>
+<td style="text-align: left;">100G 以下</td>
+<td style="text-align: left;"><strong>400G、800G、1.6T</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;">竞争格局</td>
+<td style="text-align: left;">组装红海，拼成本拼价格</td>
+<td style="text-align: left;">高速壁垒，头部吃肉</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>💡 一旦升级到高速光模块，厂商之间的差距彻底体现。从低速到高速，表面是速率提升，实际上制造门槛上升到了另一个层次。</p>
+</blockquote>
+<hr />
+<h2 id="_3">二、光模块的内部结构<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h2>
+<p>拆开光模块外壳，内部主要有两大部分：</p>
+<h3 id="_4">电信号区<a class="headerlink" href="#_4" title="Permanent link">&para;</a></h3>
+<p>核心部件是 <strong>电路板 PCB + 数字信号处理芯片 DSP</strong>。负责把传输后失真的电光信号通过算法还原成准确数据，同时在发送端优化信号。</p>
+<h3 id="_5">光信号区<a class="headerlink" href="#_5" title="Permanent link">&para;</a></h3>
+<p>由三个组件构成：</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">组件</th>
+<th style="text-align: left;">功能</th>
+<th style="text-align: left;">核心</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>发光组件 TOSA</strong></td>
+<td style="text-align: left;">把电信号翻译成光信号</td>
+<td style="text-align: left;"><strong>激光器芯片</strong>——整条产业链最稀缺的资源</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>收光组件 ROSA</strong></td>
+<td style="text-align: left;">把光信号翻译回电信号</td>
+<td style="text-align: left;"><strong>光电探测器芯片</strong> + 光学元件</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>无源器件</strong></td>
+<td style="text-align: left;">物理光学零件（透镜、隔离器、波分复用器）</td>
+<td style="text-align: left;">微米级/纳米级光学对准与精密封装能力</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>💡 <strong>无源器件</strong>不需要通电，纯靠物理折射反射原理工作；<strong>有源器件</strong>（激光器芯片、探测器芯片）必须靠外部电力驱动，是电能⇄光能转换的核心引擎。</p>
+</blockquote>
+<p>光模块厂商的工作：把电信号区的 PCB/DSP + 光信号区的收发组件/无源器件 <strong>组装</strong> 成完整的光模块。</p>
+<hr />
+<h2 id="_6">三、高速光模块的竞争壁垒：为什么头部能吃肉？<a class="headerlink" href="#_6" title="Permanent link">&para;</a></h2>
+<p>按营收规模看，2025 年度 <strong>中际旭创和新易盛断崖式领先</strong>，差距持续扩大。但在 2018 年前后，中国光模块厂商基本处在同一起跑线上。为什么这两家能迅速拉开差距？</p>
+<h3 id="_7">表象：率先绑定北美云厂商大客户<a class="headerlink" href="#_7" title="Permanent link">&para;</a></h3>
+<h3 id="_8">本质：两大核心能力<a class="headerlink" href="#_8" title="Permanent link">&para;</a></h3>
+<h4 id="1">① 封装能力——从焊电路板到系统工程<a class="headerlink" href="#1" title="Permanent link">&para;</a></h4>
+<p><strong>二级封装：</strong> 把光组件和 DSP 芯片拼装进 U 盘大小的金属盒子。难点在于：
+- 发热量大的 DSP 和极度怕热的激光器塞在一起 → 热流体力学设计
+- 高频线路防干扰设计
+- <strong>散热做不好，插进服务器几分钟就宕机</strong></p>
+<p>中际旭创和新易盛正是最早攻克了高频电路设计和极限散热的二级封装难题，才拿到大厂测试入场券。</p>
+<p><strong>一级封装：</strong> 把脆弱的裸光芯片和微型透镜等无源器件精准组装成光收发组件。相当于在头发丝上雕花的微米级光学对准。</p>
+<blockquote>
+<p>🏆 <strong>天孚通信</strong>的核心业务就是一级封装。虽然营收规模和中际旭创/新易盛差一大截，但资本市场把它和这两家并列，统称光通信第一梯队 <strong>"易中天"</strong>。因为天孚的一级封装良率直接决定整个模块的基础质量，是高速时代绕不开的"卖水人"。</p>
+</blockquote>
+<h4 id="2">② 系统级交付能力——从标品到定制化<a class="headerlink" href="#2" title="Permanent link">&para;</a></h4>
+<p>在 800G/1.6T 时代，光模块从即插即用的标准 U 盘变成了 <strong>高度定制化的设备</strong>：
+- DSP 固件算法要和英伟达网卡做到极低延迟互联
+- 功耗曲线要匹配云厂商独有的液冷机房环境
+- 研发团队要在北美巨头发布芯片之前，就和他们在同一个实验室做底层定制开发</p>
+<p><strong>大规模交付考验：</strong> 中标后下个月量产几十万只，在极端高温高湿环境下良品率 99%+。一旦交不上货导致 AI 机房建设延期，云大厂损失以千万美元计。</p>
+<p>中际旭创和新易盛正是早早跨过这两道门槛，才坐上北美云厂商的牌桌。</p>
+<hr />
+<h2 id="_9">四、光模块会产能过剩吗？<a class="headerlink" href="#_9" title="Permanent link">&para;</a></h2>
+<h3 id="_10">核心判断：高端产能过剩风险有限<a class="headerlink" href="#_10" title="Permanent link">&para;</a></h3>
+<p>光伏和锂电的过剩本质是 <strong>同质化产物过剩</strong>——砸钱买设备，大家都能造出差不多效率的电池片，最后拼刺刀杀价格。</p>
+<p>光模块的逻辑完全不同：<strong>产能不取决于有多少条生产线，而是死死卡在上游的卖铲人手里。</strong></p>
+<p>在高速光模块的成本中，<strong>光电芯片拿走了 50% 以上的利润</strong>：</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">环节</th>
+<th style="text-align: left;">格局</th>
+<th style="text-align: left;">玩家</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>电芯片（DSP）</strong></td>
+<td style="text-align: left;">寡头垄断</td>
+<td style="text-align: left;">博通、Marvell 两家美国巨头</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>光芯片（激光器）</strong></td>
+<td style="text-align: left;">寡头垄断</td>
+<td style="text-align: left;">Lumentum、Coherent、博通、住友</td>
+</tr>
+</tbody>
+</table>
+<h3 id="_11">光芯片为何稀缺？<a class="headerlink" href="#_11" title="Permanent link">&para;</a></h3>
+<p>高端光芯片被最底层的 <strong>材料学和外延生长工艺</strong> 死死卡了脖子。比如高端激光器依赖的磷化铟衬底材料，其晶体生长和加工良率极难控制——不是靠砸钱买设备就能解决的。</p>
+<blockquote>
+<p>🔬 <strong>英伟达在 2026 年初分别对 Lumentum 和 Coherent 砸下 20 亿美元投资，就是为了提前锁定这两家公司有限的光芯片产能。</strong></p>
+</blockquote>
+<h3 id="_12">光芯片核心技术路线<a class="headerlink" href="#_12" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">路线</th>
+<th style="text-align: left;">原理</th>
+<th style="text-align: left;">适用场景</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>DML 激光器</strong></td>
+<td style="text-align: left;">像手电筒开关一样发亮/灭的摩斯密码</td>
+<td style="text-align: left;">低速时代（100G 以下）</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>CW 光源 + 调制器</strong></td>
+<td style="text-align: left;">手电筒常亮，前面加一个极速开合的物理快门</td>
+<td style="text-align: left;">400G+ 高端方案</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>EML 激光器</strong></td>
+<td style="text-align: left;">常亮手电筒 + 极速快门一体化集成在同一颗材料上</td>
+<td style="text-align: left;"><strong>800G/1.6T 最主流、最稀缺的方案</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>硅光芯片</strong></td>
+<td style="text-align: left;">用造 CPU 的方式造光芯片（见下一章）</td>
+<td style="text-align: left;">下一代降本方案</td>
+</tr>
+</tbody>
+</table>
+<h3 id="_13">国内光芯片进展<a class="headerlink" href="#_13" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">公司</th>
+<th style="text-align: left;">进展</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>源杰科技</strong></td>
+<td style="text-align: left;">国内首家量产 100G PAM4 EML 芯片，CW 100mW 激光器大批量交货</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>东山精密（收购索尔思光电）</strong></td>
+<td style="text-align: left;">索尔思 100G PAM4 EML 芯片已大批量交付</td>
+</tr>
+<tr>
+<td style="text-align: left;">其他企业</td>
+<td style="text-align: left;">无官方信息表明已实现 100G+ 高端光芯片量产</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>⚠️ <strong>判断一家公司估值有没有泡沫，最关键看他最牛的产品有没有被头部客户大批量采购、有没有真金白银兑现到业绩上。</strong></p>
+</blockquote>
+<hr />
+<h2 id="cpu">五、硅光路线：用造 CPU 的方式造光芯片<a class="headerlink" href="#cpu" title="Permanent link">&para;</a></h2>
+<h3 id="_14">为什么需要硅光？<a class="headerlink" href="#_14" title="Permanent link">&para;</a></h3>
+<p>传统磷化铟材料难搞、产能受限。硅光的逻辑是 <strong>掀桌子</strong>——利用人类最成熟、最擅长的硅做底座，把复杂的光路和调制器像印报纸一样批量印刷在硅晶圆上。</p>
+<p>Intel 是硅光的早期发起者，虽然在 2023 年将光模块业务卖给了捷普，但硅光这把火在如今的 800G/1.6T 时代被北美云大厂彻底推向了高潮。</p>
+<h3 id="_15">硅光时代的产业链新格局<a class="headerlink" href="#_15" title="Permanent link">&para;</a></h3>
+<p>以一块 <strong>1.6T 硅光模块</strong> 为例：</p>
+<div class="highlight"><pre><span></span><code>芯片巨头设计（Marvell/博通）
+    ↓ 提供 DSP + 硅光芯片设计图
+代工厂制造（台积电/格芯/中芯国际）
+    ↓ 12英寸硅晶圆上批量印刷光子裸芯片
+光源采购（Lumentum/源杰科技）
+    ↓ CW 光源（硅光不发光，需要外置手电筒）
+一级封装（天孚通信等）
+    ↓ CW 光源精准贴装耦合到硅光芯片 → 硅光引擎
+二级封装与交付（中际旭创等）
+    ↓ 设计电路板、散热、整机封装、系统交付
+</code></pre></div>
+<h3 id="_16">芯片巨头为什么不亲自下场做光模块？<a class="headerlink" href="#_16" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">原因</th>
+<th style="text-align: left;">说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>毛利保护</strong></td>
+<td style="text-align: left;">芯片巨头毛利率 60%+，光模块组装长期看 ~30%，会拉低财务成色</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>制造重担</strong></td>
+<td style="text-align: left;">1.6T 模块系统调优和海量交付极其繁琐，属于吃力不讨好的重资产</td>
+</tr>
+</tbody>
+</table>
+<p>正因如此，中国头部厂商在硅光时代依然有位置：
+- <strong>天孚通信</strong>稳稳吃到硅光引擎一级封装红利
+- <strong>中际旭创</strong>硅光模块出货占比做到 50%+，凭借强大的封装和系统级交付能力</p>
+<hr />
+<h2 id="cpo">六、CPO 时代：光模块产业的终极革命<a class="headerlink" href="#cpo" title="Permanent link">&para;</a></h2>
+<h3 id="cpo-pcb">CPO 的本质：解决 PCB 电损耗问题<a class="headerlink" href="#cpo-pcb" title="Permanent link">&para;</a></h3>
+<p>在传统架构中，交换芯片在主板中央，光模块插在前面板，中间有十几厘米的 PCB 电信号传输距离。当交换机总带宽从 12.8T 飙升到 102.4T 时，高频电信号在 PCB 上跑十几厘米损耗惊人——<strong>用来运送电信号的功耗甚至超过了芯片计算本身的功耗。</strong></p>
+<p>英伟达和博通的方案一致：<strong>把硅光引擎直接贴在交换芯片旁边，封装在同一基板上。</strong> 电信号走几毫米直接进硅光芯片变光信号——PCB 电损耗几乎清零。</p>
+<h3 id="lpo">过渡方案 LPO：治标不治本<a class="headerlink" href="#lpo" title="Permanent link">&para;</a></h3>
+<p>LPO（线性直驱插拔光模块）：拔掉最费电的 DSP 芯片，让交换芯片直接驱动光模块。但到了 3.2T，没有 DSP 做信号补偿，误码率会直接失控。</p>
+<p><strong>CPO 不是选择题，而是 3.2T 时代的唯一解。</strong></p>
+<h3 id="cpo_1">CPO 时代的利益分配新格局<a class="headerlink" href="#cpo_1" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">角色</th>
+<th style="text-align: left;">地位</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>英伟达、博通</strong></td>
+<td style="text-align: left;"><strong>绝对霸主</strong>——定义包含光连接在内的最底层算力系统架构，吃最大利润</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>台积电等晶圆代工厂</strong></td>
+<td style="text-align: left;"><strong>最高端封装权</strong>——把交换芯片和硅光引擎直接焊在同一硅基板上</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Lumentum、源杰科技等</strong></td>
+<td style="text-align: left;"><strong>继续卖铲人</strong>——CPO 极度依赖外置大功率 CW 光源模块</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>天孚通信等一级封装厂</strong></td>
+<td style="text-align: left;"><strong>有望留在牌桌</strong>——晶圆上精准耦合光纤阵列需要数年的光学手艺</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>工业富联等整机代工厂</strong></td>
+<td style="text-align: left;"><strong>跨界收割者</strong>——当光引擎长在交换机主板上，代工厂接管了原本属于光模块厂商的活</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>传统光模块厂商</strong></td>
+<td style="text-align: left;"><strong>面临考验</strong>——物理形态消失，系统组装被抢走，量价齐升的黄金岁月大概率一去不复返</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="_17">七、产业演进的两条核心线索<a class="headerlink" href="#_17" title="Permanent link">&para;</a></h2>
+<blockquote>
+<p><strong>无情的物理定律：</strong> 光通信的每一次迭代都是在对抗摩尔定律的物理极限。未来的产业话语权不属于组装厂，而是属于掌握 TFLN、大功率 CW 光源和底层晶圆封装的玩家。</p>
+<p><strong>产业权力的绝对收敛：</strong> 在英伟达和博通试图通过 CPO 完成终极收割的今天，没有任何外围硬件是绝对安全的。产业的剩余利润正在不可逆转地向最顶层的算力架构定义者和最底层的半导体制造寡头疯狂集中。</p>
+</blockquote>
+<hr />
+<h2 id="_18">主要公司地图<a class="headerlink" href="#_18" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">公司</th>
+<th style="text-align: left;">角色</th>
+<th style="text-align: left;">核心看点</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>中际旭创</strong>（300308）</td>
+<td style="text-align: left;">光模块龙头</td>
+<td style="text-align: left;">800G/1.6T 出货全球领先，硅光模块占比 50%+</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>新易盛</strong>（300502）</td>
+<td style="text-align: left;">光模块龙头</td>
+<td style="text-align: left;">与中际旭创断崖式领先其他厂商</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>天孚通信</strong>（300394）</td>
+<td style="text-align: left;">一级封装</td>
+<td style="text-align: left;">光引擎封装"卖水人"，硅光/CPO 时代核心受益</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>源杰科技</strong>（688498）</td>
+<td style="text-align: left;">光芯片</td>
+<td style="text-align: left;">国内唯一量产 100G EML 芯片，CW 光源大批量交货</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>东山精密</strong>（002384）</td>
+<td style="text-align: left;">光芯片（收购索尔思）</td>
+<td style="text-align: left;">通过并购获得 20 年光芯片量产经验</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>立讯精密</strong>（002475）</td>
+<td style="text-align: left;">跨界者</td>
+<td style="text-align: left;">传统制造大厂入局，低速市场可能卷成红海</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>太辰光</strong>（300570）</td>
+<td style="text-align: left;">无源器件</td>
+<td style="text-align: left;">高密度光纤阵列和微型连接器，CPO 时代刚需</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<blockquote>
+<p><strong>资料来源：</strong> 本文基于抖音账号「坤元财研」视频《光模块企业为什么业绩分化？光模块行业会产能过剩么？》内容整理，结合产业链公开信息补充。</p>
+<p><em>免责声明：以上分析仅供参考，不构成投资建议。</em></p>
+<p><em>最后更新：2026-05-22 15:30（北京时间）</em></p>
+</blockquote>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  回到页面顶部
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["navigation.sections", "navigation.top", "navigation.indexes", "search.suggest", "content.code.copy"], "search": "../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "\u5df2\u590d\u5236", "clipboard.copy": "\u590d\u5236", "search.result.more.one": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.more.other": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 # \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.none": "\u6ca1\u6709\u627e\u5230\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.one": "\u627e\u5230 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.other": "# \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.placeholder": "\u952e\u5165\u4ee5\u5f00\u59cb\u641c\u7d22", "search.result.term.missing": "\u7f3a\u5c11", "select.version": "\u9009\u62e9\u5f53\u524d\u7248\u672c"}, "version": null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.79ae519e.min.js"></script>
+      
+        <script src="https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.min.js"></script>
+      
+    
+  </body>
+</html>

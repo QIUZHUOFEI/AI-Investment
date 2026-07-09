@@ -1,0 +1,2803 @@
+
+<!doctype html>
+<html lang="zh" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="AI 产业链投资分析报告 — 从芯片到应用，全景透视">
+      
+      
+        <meta name="author" content="AI Agent">
+      
+      
+        <link rel="canonical" href="https://QIUZHUOFEI.github.io/AI-Investment/%E6%9C%8D%E5%8A%A1%E5%99%A8/nvl72/">
+      
+      
+        <link rel="prev" href="../">
+      
+      
+        <link rel="next" href="../../%E7%AE%97%E5%8A%9B%E5%9F%BA%E7%A1%80%E8%AE%BE%E6%96%BD/">
+      
+      
+        
+      
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.6">
+    
+    
+      
+        <title>🧩 NVL72 深度拆解 - AI 产业链投资分析</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.484c7ddc.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="blue">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#nvl72-ai" class="md-skip">
+          跳转至
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="页眉">
+    <a href="../.." title="AI 产业链投资分析" class="md-header__button md-logo" aria-label="AI 产业链投资分析" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            AI 产业链投资分析
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              🧩 NVL72 深度拆解
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+    
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="搜索" placeholder="搜索" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="查找">
+        
+        <button type="reset" class="md-search__icon md-icon" title="清空当前内容" aria-label="清空当前内容" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            正在初始化搜索引擎
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/QIUZHUOFEI/AI-Investment" title="前往仓库" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    AI-Investment
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="导航栏" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="AI 产业链投资分析" class="md-nav__button md-logo" aria-label="AI 产业链投资分析" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    AI 产业链投资分析
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/QIUZHUOFEI/AI-Investment" title="前往仓库" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    AI-Investment
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    🏠 首页
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../%E5%8D%8A%E5%AF%BC%E4%BD%93%E8%AE%BE%E5%A4%87/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    🛠️ 半导体设备
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_2" id="__nav_2_label" tabindex="">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    🛠️ 半导体设备
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%E5%8D%8A%E5%AF%BC%E4%BD%93%E8%AE%BE%E5%A4%87/688012/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    🇨🇳 中微公司 (688012)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%E5%8D%8A%E5%AF%BC%E4%BD%93%E8%AE%BE%E5%A4%87/002371/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    🇨🇳 北方华创 (002371)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%E5%8D%8A%E5%AF%BC%E4%BD%93%E8%AE%BE%E5%A4%87/smee/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    🏭 上海微电子 SMEE (未上市)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../%E5%85%89%E9%80%9A%E4%BF%A1/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    📡 光通信
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_3" id="__nav_3_label" tabindex="">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    📡 光通信
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%E5%85%89%E9%80%9A%E4%BF%A1/%E5%85%89%E6%A8%A1%E5%9D%97/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    📡 光模块深度解读
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%E5%85%89%E9%80%9A%E4%BF%A1/lumentum/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Lumentum (LITE)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%E5%85%89%E9%80%9A%E4%BF%A1/coherent/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Coherent (COHR)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%E5%85%89%E9%80%9A%E4%BF%A1/%E4%B8%AD%E9%99%85%E6%97%AD%E5%88%9B/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    中际旭创 (300308)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%E5%85%89%E9%80%9A%E4%BF%A1/broadcom/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Broadcom (AVGO)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../%E7%AE%97%E5%8A%9B%E8%8A%AF%E7%89%87/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    🔵 算力芯片
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_4" id="__nav_4_label" tabindex="">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    🔵 算力芯片
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%E7%AE%97%E5%8A%9B%E8%8A%AF%E7%89%87/nvda/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    🥇 NVIDIA (NVDA)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%E7%AE%97%E5%8A%9B%E8%8A%AF%E7%89%87/amd/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    🥈 AMD (AMD)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%E7%AE%97%E5%8A%9B%E8%8A%AF%E7%89%87/avgo/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    🔷 Broadcom (AVGO)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%E7%AE%97%E5%8A%9B%E8%8A%AF%E7%89%87/688256/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    🇨🇳 寒武纪 (688256)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%E7%AE%97%E5%8A%9B%E8%8A%AF%E7%89%87/688041/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    🇨🇳 海光信息 (688041)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%E7%AE%97%E5%8A%9B%E8%8A%AF%E7%89%87/huawei-ascend/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    🏭 华为昇腾 (未上市)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../%E5%AD%98%E5%82%A8%E8%8A%AF%E7%89%87/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    💾 存储芯片
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_5" id="__nav_5_label" tabindex="">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    💾 存储芯片
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%E5%AD%98%E5%82%A8%E8%8A%AF%E7%89%87/samsung/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    🇰🇷 三星电子 (SSNLF)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%E5%AD%98%E5%82%A8%E8%8A%AF%E7%89%87/skhynix/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    🇰🇷 SK 海力士 (000660.KS)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%E5%AD%98%E5%82%A8%E8%8A%AF%E7%89%87/mu/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    🇺🇸 美光科技 (MU)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%E5%AD%98%E5%82%A8%E8%8A%AF%E7%89%87/ymtc/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    🏭 长江存储 (未上市)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../%E6%B6%B2%E5%86%B7/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    🌡️ 液冷/散热
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_6" id="__nav_6_label" tabindex="">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    🌡️ 液冷/散热
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%E6%B6%B2%E5%86%B7/vrt/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    🌐 维谛技术 (VRT)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%E6%B6%B2%E5%86%B7/002837/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    🇨🇳 英维克 (002837)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%E6%B6%B2%E5%86%B7/300499/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    🇨🇳 高澜股份 (300499)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7" checked>
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    🖥️ 服务器/整机
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_7" id="__nav_7_label" tabindex="">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_7">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    🖥️ 服务器/整机
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    🧩 NVL72 深度拆解
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    🧩 NVL72 深度拆解
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="目录">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#nvl72" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        一、NVL72 是什么——一句话
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        二、拆开看看——里面到底有什么
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        三、逐个深入——各自干什么
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="三、逐个深入——各自干什么">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#gpu" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        🔥 GPU（图形处理器）——大厨本厨
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#cpu" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        👨‍🍳 CPU（中央处理器）——厨师长
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#hbm" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        🥩 HBM（高带宽内存）——大厨手边的案板
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pcie" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        🚶 PCIe（外围组件互联标准）——餐厅走廊
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#nvlink-nvswitch" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        🏎️ NVLink + 🛤️ NVSwitch——大厨之间的高速传送带
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="🏎️ NVLink + 🛤️ NVSwitch——大厨之间的高速传送带">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#nvswitch" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        为什么 NVSwitch 如此重要？
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#nic" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        📦 NIC 网卡 + 🎁 光模块 + 🛣️ 光纤——外卖窗口到送餐高速
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        🚦 交换机——外面的快递中转站
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        四、一张图看懂全部协作
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#nvl72_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        五、NVL72 在投资视角下的意义
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_8" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../%E7%AE%97%E5%8A%9B%E5%9F%BA%E7%A1%80%E8%AE%BE%E6%96%BD/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    🏭 算力基础设施
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_8" id="__nav_8_label" tabindex="">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_8_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_8">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    🏭 算力基础设施
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%E7%AE%97%E5%8A%9B%E5%9F%BA%E7%A1%80%E8%AE%BE%E6%96%BD/idc/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    🏠 数据中心（IDC）
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%E7%AE%97%E5%8A%9B%E5%9F%BA%E7%A1%80%E8%AE%BE%E6%96%BD/neocloud/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    ☁️ 算力租赁（Neocloud）
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_9" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../%E5%85%88%E8%BF%9B%E5%B0%81%E8%A3%85/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    🔬 先进封装
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_9" id="__nav_9_label" tabindex="">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_9_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_9">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    🔬 先进封装
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%E5%85%88%E8%BF%9B%E5%B0%81%E8%A3%85/tsmc/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    🥇 台积电封装（TSM）
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%E5%85%88%E8%BF%9B%E5%B0%81%E8%A3%85/asx/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    🥈 日月光投控（ASX）
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%E5%85%88%E8%BF%9B%E5%B0%81%E8%A3%85/amkr/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    🥉 Amkor（AMKR）
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%E5%85%88%E8%BF%9B%E5%B0%81%E8%A3%85/600584/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    🇨🇳 长电科技（600584）
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%E5%85%88%E8%BF%9B%E5%B0%81%E8%A3%85/002156/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    🇨🇳 通富微电（002156）
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_10" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../PCB/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    🔌 PCB与连接器
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_10" id="__nav_10_label" tabindex="">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_10_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_10">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    🔌 PCB与连接器
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../PCB/unimicron/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    🌐 欣兴电子 (3037.TW)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../PCB/002463/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    🇨🇳 沪电股份 (002463)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../PCB/002916/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    🇨🇳 深南电路 (002916)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../PCB/002938/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    🇨🇳 鹏鼎控股 (002938)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_11" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../%E4%BA%BA%E5%BD%A2%E6%9C%BA%E5%99%A8%E4%BA%BA/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    🤖 人形机器人
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_11_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_11">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    🤖 人形机器人
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_12" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../%E5%AF%B9%E6%AF%94/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    📊 全产业链对比
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_12_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_12">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    📊 全产业链对比
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="目录">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#nvl72" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        一、NVL72 是什么——一句话
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        二、拆开看看——里面到底有什么
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        三、逐个深入——各自干什么
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="三、逐个深入——各自干什么">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#gpu" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        🔥 GPU（图形处理器）——大厨本厨
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#cpu" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        👨‍🍳 CPU（中央处理器）——厨师长
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#hbm" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        🥩 HBM（高带宽内存）——大厨手边的案板
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pcie" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        🚶 PCIe（外围组件互联标准）——餐厅走廊
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#nvlink-nvswitch" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        🏎️ NVLink + 🛤️ NVSwitch——大厨之间的高速传送带
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="🏎️ NVLink + 🛤️ NVSwitch——大厨之间的高速传送带">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#nvswitch" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        为什么 NVSwitch 如此重要？
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#nic" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        📦 NIC 网卡 + 🎁 光模块 + 🛣️ 光纤——外卖窗口到送餐高速
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        🚦 交换机——外面的快递中转站
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        四、一张图看懂全部协作
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#nvl72_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        五、NVL72 在投资视角下的意义
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+  
+  
+
+
+<h1 id="nvl72-ai">🧩 NVL72 深度拆解——一台 AI 超节点里有什么？<a class="headerlink" href="#nvl72-ai" title="Permanent link">&para;</a></h1>
+<blockquote>
+<p><strong>写给小白看的 NVL72 拆解</strong>，看完你就能理解：</p>
+<ul>
+<li>
+<p>NVL72 到底是什么，为什么它不只是一台"大服务器"</p>
+</li>
+<li>
+<p>GPU、CPU、HBM、NVSwitch、光模块……这些东西各管什么</p>
+</li>
+<li>
+<p>为什么 NVL72 能把 72 块 GPU 变得像 1 块超级 GPU 一样工作</p>
+</li>
+<li>
+<p>英伟达为什么说这是"AI 工厂"的基本单元</p>
+</li>
+</ul>
+</blockquote>
+<hr />
+<h2 id="nvl72">一、NVL72 是什么——一句话<a class="headerlink" href="#nvl72" title="Permanent link">&para;</a></h2>
+<p><strong>NVL72 = 英伟达把 72 块顶级 GPU + 一堆配套硬件，打包成一台机柜那么大的超级计算机。</strong></p>
+<blockquote>
+<p>💡 类比：普通服务器像一辆小轿车，NVL72 像一列高铁——同样是在跑，但里面的架构、动力、价格都完全不是一个级别。</p>
+</blockquote>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">对比</th>
+<th style="text-align: left;">普通 AI 服务器（8 卡）</th>
+<th style="text-align: left;">NVL72</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">GPU 数量</td>
+<td style="text-align: left;">8 张 H100/B200</td>
+<td style="text-align: left;"><strong>72 张 H100/B200</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;">价格</td>
+<td style="text-align: left;">~$20-30 万</td>
+<td style="text-align: left;"><strong>~$300 万美元</strong>（2000 多万人民币）</td>
+</tr>
+<tr>
+<td style="text-align: left;">功耗</td>
+<td style="text-align: left;">~10 kW</td>
+<td style="text-align: left;"><strong>~120 kW</strong>（够一栋 100 户小区的照明）</td>
+</tr>
+<tr>
+<td style="text-align: left;">互联方式</td>
+<td style="text-align: left;">PCIe（通道窄）</td>
+<td style="text-align: left;"><strong>NVLink + NVSwitch（通道极宽）</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;">重量</td>
+<td style="text-align: left;">~100 公斤</td>
+<td style="text-align: left;"><strong>~1,500 公斤</strong>（一台小汽车）</td>
+</tr>
+<tr>
+<td style="text-align: left;">定位</td>
+<td style="text-align: left;">单台服务器</td>
+<td style="text-align: left;"><strong>超节点 = 一台超级计算机</strong></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="_1">二、拆开看看——里面到底有什么<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h2>
+<p>NVL72 机柜里装的不是一个电脑，是一整套<strong>精密流水线</strong>。我们用<strong>一家顶级餐厅的后厨</strong>来理解👇</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">组件</th>
+<th style="text-align: left;">在软件中的角色</th>
+<th style="text-align: left;">🤵 <strong>餐厅比喻</strong></th>
+<th style="text-align: left;">数量（NVL72）</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>GPU</strong></td>
+<td style="text-align: left;">真正干活的"算力主力"</td>
+<td style="text-align: left;">🔥 大厨（切菜炒菜全包）</td>
+<td style="text-align: left;">72 块</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>CPU</strong></td>
+<td style="text-align: left;">分配任务、引导数据流</td>
+<td style="text-align: left;">👨‍🍳 厨师长（分单催单）</td>
+<td style="text-align: left;">几十颗</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>HBM</strong></td>
+<td style="text-align: left;">GPU 旁边的超高速缓存</td>
+<td style="text-align: left;">🥩 大厨手边的案板（不用跑腿拿材料）</td>
+<td style="text-align: left;">~5.7 TB</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>PCIe</strong></td>
+<td style="text-align: left;">机柜内部的标准通道</td>
+<td style="text-align: left;">🚶 餐厅走廊（大路，走得慢）</td>
+<td style="text-align: left;">—</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>NVLink</strong></td>
+<td style="text-align: left;">GPU 之间的超高速通道</td>
+<td style="text-align: left;">🏎️ 大厨间的专用传菜滑梯</td>
+<td style="text-align: left;">—</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>NVSwitch</strong></td>
+<td style="text-align: left;">72 块 GPU 全互联的核心</td>
+<td style="text-align: left;">🛤️ 传送带枢纽（A 大厨→B 大厨一秒到）</td>
+<td style="text-align: left;">多颗</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>NIC 网卡</strong></td>
+<td style="text-align: left;">对外收发数据的窗口</td>
+<td style="text-align: left;">📦 外卖窗口</td>
+<td style="text-align: left;">多张 400G/800G</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>光模块</strong></td>
+<td style="text-align: left;">电信号↔光信号翻译器</td>
+<td style="text-align: left;">🎁 外卖打包盒（把菜打包成能远送的形态）</td>
+<td style="text-align: left;">~144 个</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>光纤</strong></td>
+<td style="text-align: left;">传输光信号的线路</td>
+<td style="text-align: left;">🛣️ 外卖高速路</td>
+<td style="text-align: left;">几百根</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>交换机</strong></td>
+<td style="text-align: left;">机柜与外界的中转站</td>
+<td style="text-align: left;">🚦 外面的快递中转中心</td>
+<td style="text-align: left;">连接着用</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="_2">三、逐个深入——各自干什么<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h2>
+<h3 id="gpu">🔥 GPU（图形处理器）——<strong>大厨本厨</strong><a class="headerlink" href="#gpu" title="Permanent link">&para;</a></h3>
+<p>GPU 是 NVL72 存在的<strong>唯一理由</strong>。每一块 H100/B200 有上千个核心，能同时做几百万个数学运算。</p>
+<ul>
+<li>训练 AI：模型里全是"矩阵乘法"（一排数字 × 另一排数字），GPU 最擅长的就是这个</li>
+<li>NVL72 有 72 块，每块能独立干活，也能合起来干一个大活</li>
+</ul>
+<h3 id="cpu">👨‍🍳 CPU（中央处理器）——<strong>厨师长</strong><a class="headerlink" href="#cpu" title="Permanent link">&para;</a></h3>
+<p>GPU 不会自己找活干。CPU 负责：</p>
+<ul>
+<li>从硬盘/网络把训练数据读进来</li>
+<li>分好任务："你这块 GPU 算前 1/72，那块算后 1/72"</li>
+<li>GPU 算完了，CPU 把结果收回来写回存储</li>
+</ul>
+<blockquote>
+<p>CPU 擅长"一个接一个"的逻辑判断（if/else），GPU 擅长"一万人同时算"的大规模并行——两者是互补的。</p>
+</blockquote>
+<h3 id="hbm">🥩 HBM（高带宽内存）——<strong>大厨手边的案板</strong><a class="headerlink" href="#hbm" title="Permanent link">&para;</a></h3>
+<p>HBM 是贴在 GPU 旁边的超高速内存。训练 AI 时，模型参数要反复读写——如果去机柜另一边拿数据，速度会慢几十倍。</p>
+<blockquote>
+<p>💡 对比记忆：
+- 你的电脑内存（DDR5） = <strong>厨房远处冰箱</strong>（走过去要时间）
+- HBM = <strong>大厨手边的案板</strong>（随手就拿）</p>
+</blockquote>
+<p>NVL72 总 HBM 容量：<code>72 × 80GB（H100）≈ 5.7TB</code>，全部紧贴 GPU 放置。</p>
+<h3 id="pcie">🚶 PCIe（外围组件互联标准）——<strong>餐厅走廊</strong><a class="headerlink" href="#pcie" title="Permanent link">&para;</a></h3>
+<p>PCIe 是机柜内部最通用的<strong>标准通道</strong>，连接 CPU、GPU、网卡、存储等组件。</p>
+<p>但 NVLink 比 PCIe 快很多，所以 NVL72 里：</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">通道</th>
+<th style="text-align: left;">速度（双向）</th>
+<th style="text-align: left;">用来干什么</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>PCIe 5.0</strong></td>
+<td style="text-align: left;">~128 GB/s</td>
+<td style="text-align: left;">CPU ↔ GPU、网卡 ↔ CPU 等常规连接</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>NVLink 5.0</strong></td>
+<td style="text-align: left;"><strong>~900 GB/s</strong></td>
+<td style="text-align: left;">GPU ↔ GPU（7 倍于 PCIe！）</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>用快递对比：PCIe 是普通快递（3-5 天到），NVLink 是顺丰特快（次日达还带冷链）。</p>
+</blockquote>
+<h3 id="nvlink-nvswitch">🏎️ NVLink + 🛤️ NVSwitch——<strong>大厨之间的高速传送带</strong><a class="headerlink" href="#nvlink-nvswitch" title="Permanent link">&para;</a></h3>
+<p>这是 NVL72 最核心的<strong>独门武器</strong>。</p>
+<ul>
+<li><strong>NVLink</strong>：GPU 之间的超高速连接通道</li>
+<li><strong>NVSwitch</strong>：一个巨大的交换机芯片，让<strong>任意两块 GPU 都能直连</strong></li>
+</ul>
+<p>普通服务器里 8 块 GPU 走 PCIe 通信，速度和带宽都有限。NVL72 里 <strong>72 块 GPU 通过 NVSwitch 全部互联</strong>，每块 GPU 都能以近 <strong>900 GB/s</strong> 的速度跟其他任意一块 GPU 对话。</p>
+<blockquote>
+<p>💡 <strong>这就好比 72 个大厨每人面前都有 71 条传送带直通其他大厨的案板——想传菜？0.1 秒到达。</strong></p>
+</blockquote>
+<h4 id="nvswitch">为什么 NVSwitch 如此重要？<a class="headerlink" href="#nvswitch" title="Permanent link">&para;</a></h4>
+<p>训练大模型（比如 GPT-4 级别）时，模型参数太大，一块 GPU 装不下，必须<strong>切分成 72 份</strong>放在 72 块 GPU 上。训练过程中，它们要不停地互相传递中间计算结果。</p>
+<p><strong>没有 NVSwitch</strong>：传一次要绕路走 CPU → PCIe → CPU，速度极慢，72 块 GPU 的效率可能还不如 4 块。</p>
+<p><strong>有 NVSwitch</strong>：传一次直通直达，72 块 GPU 感觉像<strong>1 块超级 GPU</strong>一样工作。这就是英伟达敢说"NVL72 是一台 AI 超级计算机"的底气。</p>
+<h3 id="nic">📦 NIC 网卡 + 🎁 光模块 + 🛣️ 光纤——<strong>外卖窗口到送餐高速</strong><a class="headerlink" href="#nic" title="Permanent link">&para;</a></h3>
+<p>这三样是机柜<strong>对外的嘴巴和耳朵</strong>：</p>
+<ol>
+<li><strong>NIC 网卡</strong>（CX7/CX8 ConnectX）：插在机柜上的物理接口，把数据变成电信号发出去/收进来</li>
+<li><strong>光模块</strong>：插在网卡上，把<strong>电信号翻译成光信号</strong>（铜线跑几米信号就没了，光信号能跑几公里不丢）</li>
+<li><strong>光纤</strong>：光走的通道，从机柜连到外面的交换机</li>
+</ol>
+<blockquote>
+<p><strong>一条完整链路：</strong> 网卡（电）→ 光模块（电→光翻译）→ 光纤（光传输）→ 对面光模块（光→电翻译）→ 对面设备</p>
+</blockquote>
+<h3 id="_3">🚦 交换机——<strong>外面的快递中转站</strong><a class="headerlink" href="#_3" title="Permanent link">&para;</a></h3>
+<p>NVL72 不是孤岛。它需要和其他机柜、存储系统、网络通信，这时候就需要交换机（ToR / Leaf / Spine）来做<strong>路由和转发</strong>。</p>
+<blockquote>
+<p>比喻：NVL72 是一家餐厅的后厨，交换机就是外面的快递公司——告诉你"这单送去 A 机柜，那单送去存储服务器"。</p>
+</blockquote>
+<hr />
+<h2 id="_4">四、一张图看懂全部协作<a class="headerlink" href="#_4" title="Permanent link">&para;</a></h2>
+<pre class="mermaid"><code>flowchart LR
+    外部网络[(外部网络/存储)]
+
+    subgraph NVL72["NVL72 机柜内部"]
+        光纤 -- 光信号 --&gt; 光模块
+        光模块 -- 电信号 --&gt; 网卡
+        网卡 -- 数据 --&gt; PCIe
+        PCIe --&gt; CPU["👨‍🍳 CPU（厨师长：调度分配）"]
+        CPU -- 通过 PCIe --&gt; GPU1["🔥 GPU 1 号大厨"]
+        CPU --&gt; GPU2["🔥 GPU 2 号大厨"]
+        CPU --&gt; GPUx["🔥 …… 72 号大厨"]
+        GPU1 &lt;--&gt; NVSwitch["🛤️ NVSwitch 高速传送带"]
+        GPU2 &lt;--&gt; NVSwitch
+        GPUx &lt;--&gt; NVSwitch
+        GPU1 &lt;--&gt; HBM1["🥩 HBM 案板"]
+        GPU2 &lt;--&gt; HBM2["🥩 HBM 案板"]
+        GPUx &lt;--&gt; HBMx["🥩 HBM 案板"]
+    end
+
+    外部网络 &lt;--&gt; 光纤</code></pre>
+<p><strong>数据流动顺序：</strong></p>
+<blockquote>
+<p><strong>外部进来</strong> → 光纤 → 光模块 → 网卡 → PCIe → <strong>CPU（分任务）</strong> → PCIe → <strong>GPU 开始算</strong>（在 HBM 上读写 + 通过 NVSwitch 互相传中间结果）→ 算出结果 → 原路返回</p>
+<p>💡 <strong>关键认知：NVSwitch 让 NVL72 的 72 块 GPU 对外看起来像一台超级 GPU。</strong> 这是英伟达最值钱的技术壁垒，AMD、英特尔短期内都追不上。</p>
+</blockquote>
+<hr />
+<h2 id="nvl72_1">五、NVL72 在投资视角下的意义<a class="headerlink" href="#nvl72_1" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">投资维度</th>
+<th style="text-align: left;">解读</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">🏗️ <strong>整机集成</strong></td>
+<td style="text-align: left;">NVL72 是"机架级"产品，英伟达从卖芯片变成卖整机，<strong>每个机柜 ~$300 万，毛利极高</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;">🧱 <strong>护城河</strong></td>
+<td style="text-align: left;">NVSwitch + NVLink 是英伟达独有，<strong>竞争对手造不出同级产品</strong>，云厂商只能买</td>
+</tr>
+<tr>
+<td style="text-align: left;">🔩 <strong>受益产业链</strong></td>
+<td style="text-align: left;">光模块（中际旭创（300308）/天孚通信（300394））、PCB（沪电股份（002463））、液冷（英维克（002837））、服务器（工业富联（601138）/浪潮信息（000977））<strong>每个 NVL72 机柜带动的零部件价值量极高</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;">⚖️ <strong>风险</strong></td>
+<td style="text-align: left;">单机柜 ~120kW 功耗，<strong>散热和电力是瓶颈</strong>；美国政府出口管制影响中国客户采购</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<blockquote>
+<p>*<em>最后更新：2026-05-26 15:39（北京时间）</em></p>
+</blockquote>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  回到页面顶部
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["navigation.sections", "navigation.top", "navigation.indexes", "search.suggest", "content.code.copy"], "search": "../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "\u5df2\u590d\u5236", "clipboard.copy": "\u590d\u5236", "search.result.more.one": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.more.other": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 # \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.none": "\u6ca1\u6709\u627e\u5230\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.one": "\u627e\u5230 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.other": "# \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.placeholder": "\u952e\u5165\u4ee5\u5f00\u59cb\u641c\u7d22", "search.result.term.missing": "\u7f3a\u5c11", "select.version": "\u9009\u62e9\u5f53\u524d\u7248\u672c"}, "version": null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.79ae519e.min.js"></script>
+      
+        <script src="https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.min.js"></script>
+      
+    
+  </body>
+</html>
